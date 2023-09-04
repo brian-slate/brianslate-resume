@@ -1,12 +1,11 @@
 <script>
   export let resumeData;
   
-  import BatteryMeter from './BatteryMeter.svelte';
+  import BatteryMeter from '$lib/BatteryMeter.svelte';
 </script>
 
 <style>
-  /* Matching your gold/gray theme */
-  span {
+  h2 {
     color: var(--gold);
   }
   p {
