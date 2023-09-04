@@ -1,0 +1,124 @@
+{
+    "name": "Brian T Slate",
+    "contact": {
+        "address": "2727 Medlow Ave, Los Angeles, CA, 90065",
+        "tel": "6083860560",
+        "email": "briantslate@gmail.com"
+    },
+    "summary": "Full-stack web developer with a commitment to achieving a concise, intuitive codebase and user experience. Adept in all facets from conception & implementation to deployment & support.",
+    "skills": [
+        {"name": ".NET C# (MVC)", "level": 5, "category": "Back-End"},
+        {"name": "PHP (Zend MVC, WordPress, Drupal)", "level": 4, "category": "Back-End"},
+        {"name": "Ruby (Rails)", "level": 3, "category": "Back-End"},
+        {"name": "SQL Server & Management Studio", "level": 5, "category": "Back-End"},
+        {"name": "Vanilla JavaScript", "level": 4, "category": "Front-End"},
+        {"name": "jQuery", "level": 4, "category": "Front-End"},
+        {"name": "Ember JS", "level": 4, "category": "Front-End"},
+        {"name": "CSS 3", "level": 4, "category": "Front-End"},
+        {"name": "SASS (SCSS)", "level": 4, "category": "Front-End"},
+        {"name": "Bootstrap (2 & 3)", "level": 4, "category": "Front-End"},
+        {"name": "HTML 5", "level": 4, "category": "Front-End"},
+        {"name": "Linux Server Setup/Administration", "level": 4, "category": "Server"},
+        {"name": "Apache/NGIX", "level": 4, "category": "Server"},
+        {"name": "Windows Server Setup/Administration", "level": 4, "category": "Server"},
+        {"name": "IIS 7/8", "level": 4, "category": "Server"},
+        {"name": "Amazon Web Services", "level": 4, "category": "Cloud"},
+        {"name": "Microsoft Azure with WebMatrix", "level": 3, "category": "Cloud"},
+        {"name": "Git & SVN Revision Control", "level": 4, "category": "Code Versioning"},
+        {"name": "Visual Studio 2010/2013, Sublime Text 3", "level": 4, "category": "IDE"},
+        {"name": "Scrum Master", "level": 3, "category": "Management"},
+        {"name": "Engineering Management", "level": 3, "category": "Management"},
+        {"name": "DevOps", "level": 3, "category": "Infrastructure"}
+    ],
+    "employment": [
+        {
+            "company": "CI Solutions",
+            "duration": "May 2022 – Present",
+            "position": "Scrum Master, Engineering Manager, DevOps Engineer, Software Developer",
+            "location": "Remote",
+            "responsibilities": [
+                "Performed multiple roles including scrum master, engineering manager, software developer, and devops platform engineer.",
+                "Built onboarding and offboarding processes for the team.",
+                "Provided in-depth mentorship for engineers.",
+                "Converted a monolithic app for scalability.",
+                "Automated about 80% of processes.",
+                "Managed despite convoluted priorities and ineffective leadership.",
+                "Became fluent in devops development.",
+                "Onboarded over 10+ developers & contractors."
+            ]
+        },
+        {
+            "company": "BlueTree Network",
+            "duration": "1/2012 – 9/2014",
+            "position": "Consultant/CTO/Lead Developer",
+            "location": "Madison, WI",
+            "responsibilities": [
+                "Consulted as a technical liaison between company founders and chosen development house.",
+                "Served as CTO and led development with an initial team of three.",
+                "Refactored system with .NET MVC and Entity Framework."
+            ]
+        },
+        {
+            "company": "Casanova Creative LLC",
+            "duration": "11/2010 – Present",
+            "position": "Full-Stack Developer",
+            "location": "Madison, WI",
+            "responsibilities": [
+                "Implemented a variety of brochure websites for a broad range of clients using primarily PHP and WordPress CMS."
+            ]
+        },
+        {
+            "company": "ProTech Marketing",
+            "duration": "9/2011 – 9/2012",
+            "position": "Full-Stack Developer",
+            "location": "Madison, WI",
+            "responsibilities": [
+                "Built an online marketplace for digital products.",
+                "Created a web traffic generation tool."
+            ]
+        },
+        {
+            "company": "University of Wisconsin - Department of Medicine",
+            "duration": "9/2005 – 9/2012",
+            "position": "Senior Information Processing Consultant",
+            "location": "Madison, WI",
+            "responsibilities": [
+                "Developed a full-service Human Resources application in Ruby on Rails & MySQL.",
+                "Data migration and development of two departmental websites based on an early CMS."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "title": "Zend Certification (Zend Certified Engineer)",
+            "year": 2007
+        },
+        {
+            "title": "B.S. Computer Science",
+            "year": 2005,
+            "school": "University of Wisconsin, Madison, WI"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Tyler API",
+            "status": "Migration seems to be going well!"
+        },
+        {
+            "name": "Batch Printing",
+            "status": "In Progress"
+        },
+        {
+            "name": "Tina Timekeeping",
+            "status": "Final Development Stages"
+        },
+        {
+            "name": "Ruby API",
+            "status": "Completed"
+        },
+        {
+            "name": "TimeTracker",
+            "status": "Discontinued"
+        }
+    ]
+}
