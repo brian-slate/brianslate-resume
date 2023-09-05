@@ -91,12 +91,17 @@
     ],
     "education": [
         {
-            "title": "Zend Certification (Zend Certified Engineer)",
-            "year": 2007
+            "degree": "Zend Certification (Zend Certified Engineer)",
+            "field": "PHP",
+            "startYear": 2007,
+            "endYear": 2007,
+            "school": "Online"
         },
         {
-            "title": "B.S. Computer Science",
-            "year": 2005,
+            "degree": "B.S.",
+            "field": "Computer Science",
+            "startYear": 2003,
+            "endYear": 2005,
             "school": "University of Wisconsin, Madison, WI"
         }
     ],

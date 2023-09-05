@@ -1,25 +1,27 @@
 <script>
-	import { afterUpdate, onMount, onDestroy } from 'svelte';
+	import { onMount, onDestroy } from 'svelte';
 
 	export let leftColor = 'rgba(128, 128, 128, 0.3)';
 	export let rightColor = 'rgba(255, 215, 0, 0.8)';
-	export let animationSpeed = 1000; // in milliseconds
+	export let shapeRegenerationMinInterval = 500;
+	export let shapeRegenerationMaxInterval = 5000;
 
-	const easingFunctions = ['ease-in', 'ease-out', 'linear', 'ease-in-out'];
-	const durations = ['2s', '3s', '4s']; // You can add more durations as you like
-
-	let selectedEasingFunction, selectedDuration;
-	let animationInterval;
-
+	let transitionEasingFunctions = ['ease-in', 'ease-out', 'ease-in-out', 'linear'];
+	let randomEasingFunction;
+    let durations = ['2s', '3s', '4s'];
+    let randomDuration;
+	let shapeRegenerationInterval;
 	let slotContainer;
-	let path1 = '',
-		path2 = '';
+	let leftShapePath = '';
+	let rightShapePath = '';
+	let resizeTimeout;
+	let animating = true;  // Reactive variable to control transitions
 
-	function pointsToPath(points) {
-		return `M${points.map((p) => `${p.x},${p.y}`).join(' L')}`;
+    function pointsToPath(points) {
+		return `M${points.map(p => `${p.x},${p.y}`).join(' L')}`;
 	}
 
-	function generateZigzagShape(width, height, leftPercent) {
+    function generateZigzagShape(width, height, leftPercent) {
 		const points = [
 			{ x: 0, y: 0 },
 			{ x: width * leftPercent, y: 0 }
@@ -42,7 +44,7 @@
 		return points;
 	}
 
-	function generatePolygonPoints() {
+	function generateShapes() {
 		const { width, height } = slotContainer.getBoundingClientRect();
 
 		// Randomize the portion of the left filled area
@@ -54,36 +56,62 @@
 			return { x: width - point.x, y: point.y };
 		});
 
-		path1 = pointsToPath(points1);
-		path2 = pointsToPath(points2);
+		leftShapePath = pointsToPath(points1);
+		rightShapePath = pointsToPath(points2);
+	}
+
+	function setRandomShapeRegenerationInterval() {
+		const randomTime = Math.random() * (shapeRegenerationMaxInterval - shapeRegenerationMinInterval) + shapeRegenerationMinInterval;
+		shapeRegenerationInterval = setInterval(() => {
+			generateShapes();
+			clearInterval(shapeRegenerationInterval);
+			setRandomShapeRegenerationInterval();
+		}, randomTime);
+	}
+
+	function handleResize() {
+		animating = false;
+
+		// Force a reflow to apply the changes instantly.
+		generateShapes();
+		slotContainer.offsetHeight; // just reading the value forces the flush
+
+		clearTimeout(resizeTimeout);
+		resizeTimeout = setTimeout(() => {
+			generateShapes();
+			animating = true;
+		}, 200);
 	}
 
 	onMount(() => {
-		// Randomly select an easing function and duration for this instance
-		selectedEasingFunction = easingFunctions[Math.floor(Math.random() * easingFunctions.length)];
-		selectedDuration = durations[Math.floor(Math.random() * durations.length)];
+		randomEasingFunction = transitionEasingFunctions[Math.floor(Math.random() * transitionEasingFunctions.length)];
+        randomDuration = durations[Math.floor(Math.random() * durations.length)];
+		generateShapes();
+		setRandomShapeRegenerationInterval();
+		window.addEventListener('resize', handleResize);
 
-		// Generate initial polygons
-		generatePolygonPoints();
-
-		// Set up an interval to keep updating the polygons
-		animationInterval = setInterval(generatePolygonPoints, animationSpeed);
+		return () => {
+			clearInterval(shapeRegenerationInterval);
+			window.removeEventListener('resize', handleResize);
+		};
 	});
 
-	// Don't forget to clear the interval when the component is destroyed
 	onDestroy(() => {
-		clearInterval(animationInterval);
-	});
-
-	afterUpdate(() => {
-		generatePolygonPoints();
+		clearInterval(shapeRegenerationInterval);
 	});
 </script>
 
 <div style="position: relative;" bind:this={slotContainer}>
 	<svg style="position: absolute; width: 100%; height: 100%; z-index: -1;">
-		<path d={path1} style={`fill:${leftColor}`} />
-		<path d={path2} style={`fill:${rightColor}`} />
+		<rect x="0" y="0" width="100%" height="100%" style={`fill:${!animating ? leftColor : 'none'}`} />
+        <path
+            d={leftShapePath}
+            style={`fill:${leftColor}; transition: ${!animating ? '' : `d ${randomDuration} ${randomEasingFunction}`};`}
+        />
+        <path
+            d={rightShapePath}
+            style={`fill:${rightColor}; transition: ${!animating ? '' : `d ${randomDuration} ${randomEasingFunction}`};`}
+        />
 	</svg>
 	<div>
 		<slot />
@@ -91,7 +119,5 @@
 </div>
 
 <style>
-	path {
-		transition: d 3s ease-out;
-	}
+
 </style>
