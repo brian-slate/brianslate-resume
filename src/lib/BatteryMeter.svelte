@@ -4,7 +4,8 @@
   let segments = new Array(5).fill(false);
   let isMaxLevel = false;
   let currentFilling = -1;
-  let fullBlinkIndex = 0;
+  let fullBlinkIndex = -1;
+  let initialDelay = Math.random() * 1000; // Random delay up to 1 second
 
   onMount(() => {
     let i = 0;
@@ -20,9 +21,11 @@
         clearInterval(interval);
         if (level === 5) {
           isMaxLevel = true;
-          setInterval(() => {
-            fullBlinkIndex = (fullBlinkIndex + 1) % 5;
-          }, 1000); // 1s delay for the full battery blink
+          setTimeout(() => {
+            setInterval(() => {
+              fullBlinkIndex = (fullBlinkIndex + 1) % 5;
+            }, 1000); // 1s delay for the full battery blink
+          }, initialDelay);
         }
       }
     }, 500); // 500ms delay between each segment filling up
@@ -72,21 +75,17 @@
     0% { background-color: white; }
     100% { background-color: var(--color-theme-2); }
   }
-  @keyframes pulse {
-    0% { opacity: 1; }
-    100% { opacity: 0.9; } /* Less fade */
-  }
   .segment.full {
     background-color: var(--color-electric-green); /* All segments stay green */
   }
   .segment.fullBlink {
     animation: fullBlink 1s infinite alternate; /* Slower animation for full battery */
+    animation-delay: var(--random-delay, 0s); /* Use random delay */
   }
   @keyframes fullBlink {
-  0% { background-color: var(--color-electric-green); }
-  100% { background-color: rgba(var(--color-electric-green-rgb), 0.7); } /* Lighter shade */
-}
-
+    0% { background-color: var(--color-electric-green); }
+    100% { background-color: rgba(var(--color-electric-green-rgb), 0.7); } /* Lighter shade */
+  }
 </style>
 
 <div class="battery">

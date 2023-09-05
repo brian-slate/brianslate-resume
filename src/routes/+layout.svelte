@@ -9,7 +9,7 @@
 	<slot />
 
 	<footer>
-		<p>&copy; 2023 &middot; Built by Me with <a href="https://kit.svelte.dev">SvelteKit</a></p>
+		<p>&copy; 2023 &middot; Built with <a href="https://kit.svelte.dev">SvelteKit</a></p>
 	</footer>
 </div>
 

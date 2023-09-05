@@ -6,8 +6,8 @@ async function getLinkedInData(URI = 'https://api.linkedin.com/v2/me') {
     const tokenResponse = await axios.post('https://www.linkedin.com/oauth/v2/accessToken', null, {
       params: {
         grant_type: 'client_credentials',
-        client_id: '86ugaucd0n52me',
-        client_secret: 'UjZZ13QK0CxQ7FWb',
+        client_id: '---',
+        client_secret: '---',
       },
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',

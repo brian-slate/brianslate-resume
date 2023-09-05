@@ -3,94 +3,210 @@
     "title": "Director of Software Engineering",
     "contact": {
         "address": "2727 Medlow Ave, Los Angeles, CA, 90065",
-        "tel": "6083860560",
+        "tel": "+1 608.386.0560",
         "email": "briantslate@gmail.com",
-        "website": "https://briantslate.com"
+        "website": "https://briantslate.com",
+        "linkedIn": "https://www.linkedin.com/in/brianslate/"
     },
-    "summary": "Full-stack web developer with a commitment to achieving a concise, intuitive codebase and user experience. Adept in all facets from conception & implementation to deployment & support.",
+    "summary": "As a seasoned Director of Software Engineering, I've found that failing fast is the cheat code to unlocking creativity. I've turned setbacks into successes, pitfalls into platforms, and mistakes into masterstrokes.",
+    "additionalInfo": [
+        "Fluent in English, conversational in Spanish",
+        "Skilled in clear and effective communication",
+        "Avid player of artistic RPGs, where storytelling meets visual splendor",
+        "Not just a plant dad—my yard is a lush oasis",
+        "Enthusiastic collector of fun and funky timepieces",
+        "A fan of graphic novels, especially the eerie worlds of Junji Ito",
+        "A devotee of sci-fi and fantasy in all forms",
+        "My living space is a curated blend of art and simplicity"
+    ],
     "skills": [
-        {"name": ".NET C# (MVC)", "level": 5, "category": "Back-End"},
-        {"name": "PHP (Zend MVC, WordPress, Drupal)", "level": 4, "category": "Back-End"},
-        {"name": "Ruby (Rails)", "level": 3, "category": "Back-End"},
-        {"name": "SQL Server & Management Studio", "level": 5, "category": "Back-End"},
-        {"name": "Vanilla JavaScript", "level": 4, "category": "Front-End"},
-        {"name": "jQuery", "level": 4, "category": "Front-End"},
-        {"name": "Ember JS", "level": 4, "category": "Front-End"},
-        {"name": "CSS 3", "level": 4, "category": "Front-End"},
-        {"name": "SASS (SCSS)", "level": 4, "category": "Front-End"},
-        {"name": "Bootstrap (2 & 3)", "level": 1, "category": "Front-End"},
-        {"name": "HTML 5", "level": 4, "category": "Front-End"},
-        {"name": "Linux Server Setup/Administration", "level": 4, "category": "Server"},
-        {"name": "Apache/NGIX", "level": 4, "category": "Server"},
-        {"name": "Windows Server Setup/Administration", "level": 4, "category": "Server"},
-        {"name": "IIS 7/8", "level": 4, "category": "Server"},
-        {"name": "Amazon Web Services", "level": 4, "category": "Cloud"},
-        {"name": "Microsoft Azure with WebMatrix", "level": 3, "category": "Cloud"},
-        {"name": "Git & SVN Revision Control", "level": 4, "category": "Code Versioning"},
-        {"name": "Visual Studio 2010/2013, Sublime Text 3", "level": 4, "category": "IDE"},
-        {"name": "Scrum Master", "level": 3, "category": "Management"},
-        {"name": "Engineering Management", "level": 3, "category": "Management"},
-        {"name": "DevOps", "level": 3, "category": "Infrastructure"}
+        {
+            "name": "KPI Tracking",
+            "level": 5,
+            "category": "Management",
+            "subitems": []
+        },
+        {
+            "name": "Jira",
+            "level": 3,
+            "category": "Management",
+            "subitems": [
+                "Customization",
+                "Integration"
+            ]
+        },
+        {
+            "name": "Communications",
+            "level": 5,
+            "category": "Management",
+            "subitems": [
+                "Email",
+                "Slack",
+                "Teams", 
+                "Zoom",
+                "Text"
+            ]
+        },
+        {
+            "name": "AWS",
+            "level": 5,
+            "category": "Infrastructure",
+            "subitems": [
+                "IAM",
+                "EC2",
+                "EFS",
+                "Secrets Manager",
+                "Route 53",
+                "RDS",
+                "CloudWatch",
+                "S3",
+                "SNS",
+                "ECR",
+                "Cost Explorer",
+                "ElastiCache",
+                "Lambda",
+                "KMS"
+            ]
+        },
+        {
+            "name": "Jenkins",
+            "level": 5,
+            "category": "Infrastructure",
+            "subitems": [
+                "Declarative Pipelines",
+                "Shared Libraries"
+            ]
+        },
+        {
+            "name": "SaaS Platforms",
+            "level": 3,
+            "category": "Alerting & Monitoring",
+            "subitems": [
+                "Sentry",
+                "NewRelic",
+                "Snyk",
+                "Netdata",
+                "CloudWatch"
+            ]
+        },
+        {
+            "name": "Single Page Applications & PWA",
+            "level": 5,
+            "category": "Front-End",
+            "subitems": [
+                "React 17",
+                "Angular 14",
+                "SvelteKit 1.0"
+            ]
+        },
+        {
+            "name": "Server Side Languages",
+            "level": 4,
+            "category": "Back-End",
+            "subitems": [
+                "PHP",
+                "Node.js",
+                "Laravel 8+",
+                "AWS Lambda",
+                "C# .NET Core"
+            ]
+        },
+        {
+            "name": "Relational & Nonrelational Databases",
+            "level": 5,
+            "category": "Databases",
+            "subitems": [
+                "MySQL",
+                "MariaDB",
+                "Redis/Elasticache",
+                "SQL Server",
+                "SQLite"
+            ]
+        },
+        {
+            "name": "IDEs",
+            "level": 2,
+            "category": "IDE",
+            "subitems": [
+                "Visual Studio 2010/2013",
+                "Sublime Text 3",
+                "VS Code"
+            ]
+        },
+        {
+            "name": "Git & SVN",
+            "level": 4,
+            "category": "Code Versioning",
+            "subitems": [
+                "GitHub",
+                "BitBucket",
+                "GitHub Actions Workflows"
+            ]
+        }
     ],
     "employment": [
         {
             "company": "CI Solutions",
             "duration": "May 2022 – Present",
-            "position": "Scrum Master, Engineering Manager, DevOps Engineer, Software Developer",
-            "location": "Remote",
+            "position": "Director of Software Engineering",
+            "other-duties": "Scrum Master, Engineering Manager, DevOps Engineer, Software Developer",
+            "location": "Los Alamitos, California, United States",
             "responsibilities": [
                 "Performed multiple roles including scrum master, engineering manager, software developer, and devops platform engineer.",
-                "Built onboarding and offboarding processes for the team.",
-                "Provided in-depth mentorship for engineers.",
-                "Converted a monolithic app for scalability.",
-                "Automated about 80% of processes.",
-                "Managed despite convoluted priorities and ineffective leadership.",
-                "Became fluent in devops development.",
-                "Onboarded over 10+ developers & contractors."
+                "Built and refined on/off-boarding processes for the team.",
+                "Interviewed and onboarded over 10 developers & contractors",
+                "Mentored engineers to ramp their career growth.",
+                "Converted a monolithic PHP app for scalability.",
+                "Automated near 80% of pre-existing manual processes.",
+                "Managed a team of 8+ amid changing priorities and staff.",
+                "Became highly fluent in devops infrastructure and deployment."
             ]
         },
+        {
+            "company": "Genesys",
+            "duration": "Sep 2014 – May 2022",
+            "position": "Lead Software Engineer",
+            "location": "Madison, Wisconsin Area / Los Angeles, California, United States (Remote)",
+            "responsibilities": [
+                "Migrated an aging Angular.js SPA to Angular proper using event-driven observable based architecture.",
+                "Implemented a cross-team tool for managing iframed applications, empowering multi-faceted development teams to build/deploy autonomously.",
+                "Built and maintained the centralized Admin UI portal to provide dynamic configuration for all other services.",
+                "Showcased a VR-based Customer Support app to over 2,000 attendees at a conference.",
+                "Participated in the transition process during the acquisition of Interactive Intelligence, ensuring a smooth integration of technologies and teams."
+            ]
+        },             
         {
             "company": "BlueTree Network",
             "duration": "1/2012 – 9/2014",
             "position": "Consultant/CTO/Lead Developer",
             "location": "Madison, WI",
             "responsibilities": [
-                "Consulted as a technical liaison between company founders and chosen development house.",
-                "Served as CTO and led development with an initial team of three.",
-                "Refactored system with .NET MVC and Entity Framework."
+                "Led initial development team as CTO.",
+                "Transformed a .NET MVC system into an Ember.js SPA.",
+                "Acted as a technical bridge between founders and the development team."
             ]
         },
         {
-            "company": "Casanova Creative LLC",
-            "duration": "11/2010 – Present",
-            "position": "Full-Stack Developer",
-            "location": "Madison, WI",
-            "responsibilities": [
-                "Implemented a variety of brochure websites for a broad range of clients using primarily PHP and WordPress CMS."
-            ]
-        },
-        {
-            "company": "ProTech Marketing",
-            "duration": "9/2011 – 9/2012",
-            "position": "Full-Stack Developer",
-            "location": "Madison, WI",
-            "responsibilities": [
-                "Built an online marketplace for digital products.",
-                "Created a web traffic generation tool."
-            ]
-        },
-        {
-            "company": "University of Wisconsin - Department of Medicine",
+            "company": "University of Wisconsin · Dept. of Medicine",
             "duration": "9/2005 – 9/2012",
             "position": "Senior Information Processing Consultant",
             "location": "Madison, WI",
             "responsibilities": [
-                "Developed a full-service Human Resources application in Ruby on Rails & MySQL.",
-                "Data migration and development of two departmental websites based on an early CMS."
+                "Created a comprehensive HR application using Ruby on Rails & MySQL.",
+                "Migrated and developed two departmental websites using Drupal.",
+                "Developed a Query Manager tool for research database systems.",
+                "Built tools to quickly scaffold applications to meet department needs."
             ]
         }
     ],
     "education": [
+        {
+            "degree": "B.S.",
+            "field": "Computer Science",
+            "startYear": 2003,
+            "endYear": 2005,
+            "school": "University of Wisconsin, Madison, WI"
+        },
         {
             "degree": "Zend Certification (Zend Certified Engineer)",
             "field": "PHP",
@@ -99,11 +215,13 @@
             "school": "Online"
         },
         {
-            "degree": "B.S.",
-            "field": "Computer Science",
-            "startYear": 2003,
-            "endYear": 2005,
-            "school": "University of Wisconsin, Madison, WI"
+            "degree": "AWS Certified Developer",
+            "field": "Cloud Computing",
+            "startYear": 2016,
+            "endYear": 2022,
+            "school": "Amazon",
+            "credentialID": "BQGYDFZ1BFEQ1FSF",
+            "status": "Expired"
         }
     ],
     "projects": [
