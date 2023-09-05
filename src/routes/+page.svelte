@@ -8,7 +8,7 @@
 	import { reduced_motion } from './reduced-motion';
 
   let resumeData = null;
-  let lightGrayThemeColor, goldThemeColor, orangeThemeColor, greenThemeColor, purpleThemeColor;
+  let lightGrayThemeColor, goldThemeColor, orangeThemeColor, greenThemeColor, purpleThemeColor, lighterGrayThemeColor;
 
 	onMount(async () => {
 		const computedStyle = getComputedStyle(document.documentElement);
@@ -17,6 +17,7 @@
 		orangeThemeColor = computedStyle.getPropertyValue('--color-theme-3').trim();
 		greenThemeColor = computedStyle.getPropertyValue('--color-theme-4').trim();
 		purpleThemeColor = computedStyle.getPropertyValue('--color-theme-5').trim();
+		lighterGrayThemeColor = computedStyle.getPropertyValue('--color-lightgray').trim();
 
 		const res = await fetch('/resumeData.json');
 		resumeData = await res.json();
@@ -24,24 +25,24 @@
 </script>
 
 <svelte:head>
-	<title>Brian T. Slate</title>
+	<title>{`${resumeData?.name} - ${resumeData?.title}` || 'Loading...'}</title>
 	<meta name="description" content="Brian T. Slate - Director of Software Engineering" />
 </svelte:head>
 
 {#if resumeData}
   <header id="profile">
-    <img src="https://media.licdn.com/dms/image/D5603AQEpuj47L8XjNQ/profile-displayphoto-shrink_200_200/0/1686328359598?e=1699488000&v=beta&t=cQL7G2lWkmbm_nmMZGiizJQX1qlKWzjqxm5SgI1pNNc" alt="Your Photo">
+    <img src="https://media.licdn.com/dms/image/D5603AQEpuj47L8XjNQ/profile-displayphoto-shrink_200_200/0/1686328359598?e=1699488000&v=beta&t=cQL7G2lWkmbm_nmMZGiizJQX1qlKWzjqxm5SgI1pNNc" alt="Brian T. Slate Profile Photo">
     <div>
-      <h1>{resumeData.name || 'Your Name'}</h1>
-      <p>{resumeData.title || 'Your Title'}</p>
+      <h1>{resumeData.name}</h1>
+      <p>{resumeData.title}</p>
     </div>
   </header>
 
   <section id="contact-info">
     <h2>Contact Info</h2>
-    <p>Email: your.email@example.com</p>
-    <p>Phone: (123) 456-7890</p>
-    <p>Website: www.yourwebsite.com</p>
+    <p>Email: {resumeData.email}</p>
+    <p>Mobile: {resumeData.tel}</p>
+    <p>Website: {resumeData.website}</p>
   </section>
 
 	<section id="summary" class="rounded-section">
@@ -81,7 +82,7 @@
 	</section>
 
 	<section id="education" class="rounded-section">
-		<PolygonBackground leftColor={lightGrayThemeColor} rightColor={goldThemeColor}>
+		<PolygonBackground leftColor={lightGrayThemeColor} rightColor={lighterGrayThemeColor}>
 			<div class="content-container">
 				<Education {resumeData} />
 			</div>

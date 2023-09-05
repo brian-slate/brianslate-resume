@@ -8,20 +8,20 @@
 
 	let transitionEasingFunctions = ['ease-in', 'ease-out', 'ease-in-out', 'linear'];
 	let randomEasingFunction;
-    let durations = ['2s', '3s', '4s'];
-    let randomDuration;
+	let durations = ['2s', '3s', '4s'];
+	let randomDuration;
 	let shapeRegenerationInterval;
 	let slotContainer;
 	let leftShapePath = '';
 	let rightShapePath = '';
 	let resizeTimeout;
-	let animating = true;  // Reactive variable to control transitions
+	let animating = true; // Reactive variable to control transitions
 
-    function pointsToPath(points) {
-		return `M${points.map(p => `${p.x},${p.y}`).join(' L')}`;
+	function pointsToPath(points) {
+		return `M${points.map((p) => `${p.x},${p.y}`).join(' L')}`;
 	}
 
-    function generateZigzagShape(width, height, leftPercent) {
+	function generateZigzagShape(width, height, leftPercent) {
 		const points = [
 			{ x: 0, y: 0 },
 			{ x: width * leftPercent, y: 0 }
@@ -61,7 +61,9 @@
 	}
 
 	function setRandomShapeRegenerationInterval() {
-		const randomTime = Math.random() * (shapeRegenerationMaxInterval - shapeRegenerationMinInterval) + shapeRegenerationMinInterval;
+		const randomTime =
+			Math.random() * (shapeRegenerationMaxInterval - shapeRegenerationMinInterval) +
+			shapeRegenerationMinInterval;
 		shapeRegenerationInterval = setInterval(() => {
 			generateShapes();
 			clearInterval(shapeRegenerationInterval);
@@ -71,21 +73,21 @@
 
 	function handleResize() {
 		animating = false;
-
-		// Force a reflow to apply the changes instantly.
-		generateShapes();
-		slotContainer.offsetHeight; // just reading the value forces the flush
-
 		clearTimeout(resizeTimeout);
 		resizeTimeout = setTimeout(() => {
-			generateShapes();
 			animating = true;
+			generateShapes(); // generates new shapes after resizing is done
 		}, 200);
+
+		if (animating) {
+			generateShapes(); // scales existing shapes to fit new size
+		}
 	}
 
 	onMount(() => {
-		randomEasingFunction = transitionEasingFunctions[Math.floor(Math.random() * transitionEasingFunctions.length)];
-        randomDuration = durations[Math.floor(Math.random() * durations.length)];
+		randomEasingFunction =
+			transitionEasingFunctions[Math.floor(Math.random() * transitionEasingFunctions.length)];
+		randomDuration = durations[Math.floor(Math.random() * durations.length)];
 		generateShapes();
 		setRandomShapeRegenerationInterval();
 		window.addEventListener('resize', handleResize);
@@ -103,21 +105,20 @@
 
 <div style="position: relative;" bind:this={slotContainer}>
 	<svg style="position: absolute; width: 100%; height: 100%; z-index: -1;">
-		<rect x="0" y="0" width="100%" height="100%" style={`fill:${!animating ? leftColor : 'none'}`} />
-        <path
-            d={leftShapePath}
-            style={`fill:${leftColor}; transition: ${!animating ? '' : `d ${randomDuration} ${randomEasingFunction}`};`}
-        />
-        <path
-            d={rightShapePath}
-            style={`fill:${rightColor}; transition: ${!animating ? '' : `d ${randomDuration} ${randomEasingFunction}`};`}
-        />
+		<path
+			d={leftShapePath}
+			style={`fill:${leftColor}; transition: ${
+				animating ? `d ${randomDuration} ${randomEasingFunction}` : 'none'
+			};`}
+		/>
+		<path
+			d={rightShapePath}
+			style={`fill:${rightColor}; transition: ${
+				animating ? `d ${randomDuration} ${randomEasingFunction}` : 'none'
+			};`}
+		/>
 	</svg>
 	<div>
 		<slot />
 	</div>
 </div>
-
-<style>
-
-</style>

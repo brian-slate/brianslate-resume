@@ -88,6 +88,12 @@ select {
 	--color-theme-3: rgba(255, 165, 0, 0.8);
 	--color-theme-4: rgba(0, 128, 128, 0.8);
 	--color-theme-5: rgba(128, 0, 128, 0.8);
+	--color-theme-5: rgba(128, 0, 128, 0.8);
+	--color-lightgray: rgba(211, 211, 211, 0.4);
+	--color-electric-green: rgba(0, 255, 0, 0.9);
+	--color-faint-yellow: rgba(255, 255, 128, 0.8);
+	--color-theme-red: rgba(255, 0, 0, 0.8);
+
 
 	font-family: var(--font-body);
 	color: var(--color-text);
@@ -119,10 +125,10 @@ footer {
 	text-align: center;
 }
 header img {
-	width: 100px;
-	height: 100px;
+	width: 165px;
+	height: 165px;
 	border-radius: 50%;
-	border: 2px solid gold;
+	border: 5px solid lightgray;
 }
 h1,
 h2 {

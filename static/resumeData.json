@@ -1,10 +1,11 @@
 {
-    "name": "Brian T Slate",
+    "name": "Brian Slate",
     "title": "Director of Software Engineering",
     "contact": {
         "address": "2727 Medlow Ave, Los Angeles, CA, 90065",
         "tel": "6083860560",
-        "email": "briantslate@gmail.com"
+        "email": "briantslate@gmail.com",
+        "website": "https://briantslate.com"
     },
     "summary": "Full-stack web developer with a commitment to achieving a concise, intuitive codebase and user experience. Adept in all facets from conception & implementation to deployment & support.",
     "skills": [
@@ -17,7 +18,7 @@
         {"name": "Ember JS", "level": 4, "category": "Front-End"},
         {"name": "CSS 3", "level": 4, "category": "Front-End"},
         {"name": "SASS (SCSS)", "level": 4, "category": "Front-End"},
-        {"name": "Bootstrap (2 & 3)", "level": 4, "category": "Front-End"},
+        {"name": "Bootstrap (2 & 3)", "level": 1, "category": "Front-End"},
         {"name": "HTML 5", "level": 4, "category": "Front-End"},
         {"name": "Linux Server Setup/Administration", "level": 4, "category": "Server"},
         {"name": "Apache/NGIX", "level": 4, "category": "Server"},
