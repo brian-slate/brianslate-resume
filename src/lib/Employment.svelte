@@ -69,7 +69,7 @@
 		position: absolute;
 		left: 0;
 		color: rgba(0, 0, 0, 0.6);
-		transition: all 0.3s ease;
+		transition: all 1s ease;
 	}
 	.job-responsibilities li:hover::before {
 		color: purple;
@@ -78,7 +78,7 @@
 	}
 	@keyframes bump {
 		50% {
-			transform: rotate(360deg) scale(1.2);
+			transform: rotate(360deg) scale(3);
 		}
 		100% {
 			transform: rotate(360deg) scale(1);

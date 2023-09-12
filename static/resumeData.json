@@ -5,26 +5,30 @@
         "address": "2727 Medlow Ave, Los Angeles, CA, 90065",
         "tel": "+1 608.386.0560",
         "email": "briantslate@gmail.com",
-        "website": "https://briantslate.com",
+        "website": "https://brian-slate.com",
         "linkedIn": "https://www.linkedin.com/in/brianslate/"
     },
-    "summary": "As a seasoned Director of Software Engineering, I've found that failing fast is the cheat code to unlocking creativity. I've turned setbacks into successes, pitfalls into platforms, and mistakes into masterstrokes.",
+    "summary": "As a Director of Software Engineering, I've found that failing fast is the cheat code to unlocking creativity. I've turned setbacks into successes, pitfalls into platforms, and mistakes into masterstrokes",
     "additionalInfo": [
         "Fluent in English, conversational in Spanish",
         "Skilled in clear and effective communication",
         "Avid player of artistic RPGs, where storytelling meets visual splendor",
-        "Not just a plant dad—my yard is a lush oasis",
+        "Don't call me a plant dad, my yard is a lush oasis",
         "Enthusiastic collector of fun and funky timepieces",
         "A fan of graphic novels, especially the eerie worlds of Junji Ito",
         "A devotee of sci-fi and fantasy in all forms",
-        "My living space is a curated blend of art and simplicity"
+        "My living space is a curated blend of art and function"
     ],
     "skills": [
         {
-            "name": "KPI Tracking",
+            "name": "Leadership",
             "level": 5,
             "category": "Management",
-            "subitems": []
+            "subitems": [
+                "KPI Tracking",
+                "Resource Allocation",
+                "Agile Methodology"
+            ]
         },
         {
             "name": "Jira",
@@ -149,68 +153,65 @@
             "company": "CI Solutions",
             "duration": "May 2022 – Present",
             "position": "Director of Software Engineering",
-            "other-duties": "Scrum Master, Engineering Manager, DevOps Engineer, Software Developer",
-            "location": "Los Alamitos, California, United States",
+            "location": "Los Alamitos, CA (Remote)",
             "responsibilities": [
-                "Performed multiple roles including scrum master, engineering manager, software developer, and devops platform engineer.",
-                "Built and refined on/off-boarding processes for the team.",
-                "Interviewed and onboarded over 10 developers & contractors",
-                "Mentored engineers to ramp their career growth.",
-                "Converted a monolithic PHP app for scalability.",
-                "Automated near 80% of pre-existing manual processes.",
-                "Managed a team of 8+ amid changing priorities and staff.",
-                "Became highly fluent in devops infrastructure and deployment."
+                "Performed multiple roles including scrum master, engineering manager, software developer, and DevOps/platform engineer",
+                "Built and refined onboarding processes for the team",
+                "Managed hiring and training for over 10 developers & contractors",
+                "Mentored engineers to ramp up their career growth",
+                "Modernized and scaled a monolithic PHP application",
+                "Automated nearly 80% of pre-existing manual processes",
+                "Managed a team of 8+ amid changing priorities and staff",
+                "Became highly fluent in DevOps infrastructure and deployment"
             ]
         },
         {
             "company": "Genesys",
             "duration": "Sep 2014 – May 2022",
             "position": "Lead Software Engineer",
-            "location": "Madison, Wisconsin Area / Los Angeles, California, United States (Remote)",
+            "location": "Madison, WI / Los Angeles, CA (Remote)",
             "responsibilities": [
-                "Migrated an aging Angular.js SPA to Angular proper using event-driven observable based architecture.",
-                "Implemented a cross-team tool for managing iframed applications, empowering multi-faceted development teams to build/deploy autonomously.",
-                "Built and maintained the centralized Admin UI portal to provide dynamic configuration for all other services.",
-                "Showcased a VR-based Customer Support app to over 2,000 attendees at a conference.",
-                "Participated in the transition process during the acquisition of Interactive Intelligence, ensuring a smooth integration of technologies and teams."
+                "Migrated an aging Angular.js SPA to Angular using event-driven observable architecture",
+                "Implemented a cross-team tool for managing iframed applications, empowering multi-faceted development teams to build/deploy autonomously",
+                "Built and maintained the centralized Admin UI portal to provide dynamic configuration for all other services",
+                "Showcased a VR-based support app to over 2,000 attendees at a customer experience conference",
+                "Participated in the transition process during the acquisition of Interactive Intelligence, ensuring a smooth integration of technologies and teams"
             ]
         },             
         {
             "company": "BlueTree Network",
-            "duration": "1/2012 – 9/2014",
-            "position": "Consultant/CTO/Lead Developer",
+            "duration": "Jan 2012 – Sep 2014",
+            "position": "CTO/Lead Developer",
             "location": "Madison, WI",
             "responsibilities": [
-                "Led initial development team as CTO.",
-                "Transformed a .NET MVC system into an Ember.js SPA.",
-                "Acted as a technical bridge between founders and the development team."
+                "Led initial development team as CTO",
+                "Transformed a .NET MVC system into an Ember.js SPA",
+                "Acted as a technical bridge between founders and the development team"
             ]
         },
         {
-            "company": "University of Wisconsin · Dept. of Medicine",
-            "duration": "9/2005 – 9/2012",
+            "company": "University of Wisconsin Department of Medicine",
+            "duration": "Sep 2005 – Sep 2012",
             "position": "Senior Information Processing Consultant",
             "location": "Madison, WI",
             "responsibilities": [
-                "Created a comprehensive HR application using Ruby on Rails & MySQL.",
-                "Migrated and developed two departmental websites using Drupal.",
-                "Developed a Query Manager tool for research database systems.",
-                "Built tools to quickly scaffold applications to meet department needs."
+                "Created a comprehensive HR management portal using Ruby on Rails & SQL Server",
+                "Migrated and developed two departmental websites using Drupal",
+                "Developed a Query Manager tool for research database systems",
+                "Built tools to quickly scaffold applications to meet department needs"
             ]
         }
     ],
     "education": [
         {
-            "degree": "B.S.",
+            "degree": "B.S",
             "field": "Computer Science",
-            "startYear": 2003,
             "endYear": 2005,
             "school": "University of Wisconsin, Madison, WI"
         },
         {
             "degree": "Zend Certification (Zend Certified Engineer)",
             "field": "PHP",
-            "startYear": 2007,
             "endYear": 2007,
             "school": "Online"
         },

@@ -102,12 +102,28 @@ select {
 body {
 	/* font-family: Arial, sans-serif; */
 	font-family: 'Courier New', monospace;
-	margin: 20px;
+	margin: 0 2rem 2rem;
 	line-height: 1.6;
-	column-count: 3;
 	column-gap: 40px;
 	background-color: #f9f9f9;
 	color: #333;
+	overflow: auto;
+	position: relative; /* to align the halftone wave in the background */
+}
+
+.app {
+	column-count: 3;
+}
+
+@media (max-width: 1200px) { /* tablet */
+	.app {
+		column-count: 2;
+	}
+}
+@media (max-width: 800px) { /* tablet */
+	.app {
+		column-count: 1;
+	}
 }
 
 footer {
@@ -133,4 +149,21 @@ h2 {
 ul {
 	list-style: none;
 	padding-left: 0;
+}
+
+.footer-container {
+    display: inline-block;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.8);
+    padding: 0.8rem;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+	margin-top: 2rem;
+    border: 1px solid rgba(0,0,0,0.4);
+}
+
+body.pdf-generation .footer-container,
+body.pdf-generation .lightning
+ {
+	display: none !important;
 }

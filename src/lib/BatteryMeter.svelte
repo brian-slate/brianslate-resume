@@ -4,8 +4,6 @@
   let segments = new Array(5).fill(false);
   let isMaxLevel = false;
   let currentFilling = -1;
-  let fullBlinkIndex = -1;
-  let initialDelay = Math.random() * 1000; // Random delay up to 1 second
 
   onMount(() => {
     let i = 0;
@@ -21,11 +19,6 @@
         clearInterval(interval);
         if (level === 5) {
           isMaxLevel = true;
-          setTimeout(() => {
-            setInterval(() => {
-              fullBlinkIndex = (fullBlinkIndex + 1) % 5;
-            }, 1000); // 1s delay for the full battery blink
-          }, initialDelay);
         }
       }
     }, 500); // 500ms delay between each segment filling up
@@ -66,36 +59,31 @@
     background-color: var(--color-lightgray);
   }
   .segment.active {
-    background-color: var(--color-theme-2); /* Gold */
+    background-color: var(--color-electric-green);
   }
   .segment.blink {
-    animation: blink 0.5s 2 alternate; /* Blink twice */
+    animation: blink 0.5s 2 alternate;
   }
   @keyframes blink {
     0% { background-color: white; }
     100% { background-color: var(--color-theme-2); }
   }
-  .segment.full {
-    background-color: var(--color-electric-green); /* All segments stay green */
+  .lightning {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    display: none;
   }
-  .segment.fullBlink {
-    animation: fullBlink 1s infinite alternate; /* Slower animation for full battery */
-    animation-delay: var(--random-delay, 0s); /* Use random delay */
-  }
-  @keyframes fullBlink {
-    0% { background-color: var(--color-electric-green); }
-    100% { background-color: rgba(var(--color-electric-green-rgb), 0.7); } /* Lighter shade */
+  .battery.full .lightning {
+    display: block; /* Show when battery is full */
   }
 </style>
 
-<div class="battery">
-  {#if isMaxLevel}
-    {#each segments as segment, i}
-      <div class="segment full {i === fullBlinkIndex ? 'fullBlink' : ''}"></div>
-    {/each}
-  {:else}
-    {#each segments as segment, i}
-      <div class="segment {segment ? 'active' : ''} {i === currentFilling ? 'blink' : ''}"></div>
-    {/each}
-  {/if}
+<div class="battery {isMaxLevel ? 'full' : ''}">
+  {#each segments as segment, i}
+    <div class="segment {segment ? 'active' : ''} {i === currentFilling ? 'blink' : ''}"></div>
+  {/each}
+  <span class="lightning">⚡️</span>
 </div>

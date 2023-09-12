@@ -3,7 +3,7 @@
   </script>
   
   <header class="header">
-    <img src="https://media.licdn.com/dms/image/D5603AQEpuj47L8XjNQ/profile-displayphoto-shrink_200_200/0/1686328359598?e=1699488000&v=beta&t=cQL7G2lWkmbm_nmMZGiizJQX1qlKWzjqxm5SgI1pNNc" alt="Brian T. Slate Profile Photo">
+    <img src="/me.jpeg" alt="Brian T. Slate Profile" />
     <div class="header-text">
       <h1>{resumeData.name}</h1>
       <p>{resumeData.title}</p>
@@ -19,6 +19,7 @@
         justify-content: space-between;
         border-bottom: 8px solid var(--color-theme-5);
         border-radius: 10px;
+        box-shadow: 0px 9px 9px -3px rgba(0,0,0,0.3);
     }
 
     .header {
@@ -50,6 +51,19 @@
   
     .header-text p {
       font-size: 1.5em; /* Makes the title larger */
+    }
+
+    @media (max-width: 750px) { /* tablet */
+      .header {
+        text-align: right;
+        font-size: 1rem;
+        align-items: flex-start;
+      }
+    }
+    @media (max-width: 660px) { /* tablet */
+      .header p {
+        font-size: 1.2rem;
+      }
     }
   </style>
   
