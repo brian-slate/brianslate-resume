@@ -1,10 +1,6 @@
 <script>
 	import ProfileHeader from '$lib/ProfileHeader.svelte';
-	import AdditionalInfo from '$lib/AdditionalInfo.svelte';
-	import Summary from '$lib/Summary.svelte';
-	import Skills from '$lib/Skills.svelte';
-	import Employment from '$lib/Employment.svelte';
-	import Education from '$lib/Education.svelte';
+	import CoverLetter from '$lib/CoverLetter.svelte';
 	import PolygonBackground from '$lib/PolygonBackground.svelte';
 	import HalftoneWave from '$lib/HalftoneWave.svelte';
 	import { onMount } from 'svelte';
@@ -54,64 +50,31 @@
 </svelte:head>
 
 {#if resumeData}
-  <ProfileHeader {resumeData} />
+<ProfileHeader {resumeData} />
 
-	<section id="contact-info">
-		<h2>
-			Contact Info
-			<button id="generate-pdf" title="Download PDF" on:click={generatePDF} style="background: none; border: none; cursor: pointer;">📄</button>
-		</h2>
-		<p>Email: {resumeData.contact.email}</p>
-		<p>Mobile: {resumeData.contact.tel}</p>
-		<p>Website: <a href={resumeData.contact.website}>{resumeData.contact.website}</a></p>
-		<p>LinkedIn: <a href={resumeData.contact.linkedIn}>{resumeData.contact.linkedIn}</a></p>
-	</section>
+    <section id="contact-info">
+        <h2>
+            Contact Info
+            <button id="generate-pdf" title="Download PDF" on:click={generatePDF} style="background: none; border: none; cursor: pointer;">📄</button>
+        </h2>
+        <p>Email: {resumeData.contact.email}</p>
+        <p>Mobile: {resumeData.contact.tel}</p>
+        <p>Website: <a href={resumeData.contact.website}>{resumeData.contact.website}</a></p>
+        <p>LinkedIn: <a href={resumeData.contact.linkedIn}>{resumeData.contact.linkedIn}</a></p>
+    </section>
 
-	<!-- <section id="linkedin">
+    <!-- <section id="linkedin">
     <h2>LinkedIn</h2>
     <p><a href="https://www.linkedin.com/in/your-linkedin-profile/" target="_blank">Your LinkedIn Profile</a></p>
-  	</section> -->
+    </section> -->
 
-	<section id="summary" class="rounded-section">
-		<PolygonBackground leftColor={lightGrayThemeColor} rightColor={purpleThemeColor}>
-			<div class="content-container">
-				<Summary {resumeData} />
-			</div>
-		</PolygonBackground>
-	</section>
-
-	<section id="education" class="rounded-section">
-		<PolygonBackground leftColor={lightGrayThemeColor} rightColor={'rgba(0, 0, 0, 0.05)'}>
-			<div class="content-container">
-				<Education {resumeData} />
-			</div>
-		</PolygonBackground>
-	</section>
-
-
-	<section id="employment" class="rounded-section">
-		<PolygonBackground leftColor={lighterGrayThemeColor} rightColor={lightGrayThemeColor}>
-			<div class="content-container">
-  				<AdditionalInfo {resumeData} />
-			</div>
-		</PolygonBackground>
-	</section>
-
-	<section id="employment" class="rounded-section">
-		<PolygonBackground leftColor={lightGrayThemeColor} rightColor={greenThemeColor}>
-			<div class="content-container">
-				<Employment {resumeData} />
-			</div>
-		</PolygonBackground>
-	</section>
-
-	<section id="skills" class="rounded-section">
-		<PolygonBackground leftColor={goldThemeColor} rightColor={lightGrayThemeColor}>
-			<div class="content-container">
-				<Skills {resumeData} />
-			</div>
-		</PolygonBackground>
-	</section>
+    <section id="summary" class="rounded-section">
+        <PolygonBackground leftColor={lightGrayThemeColor} rightColor={purpleThemeColor}>
+            <div class="content-container">
+                <CoverLetter {resumeData} />
+            </div>
+        </PolygonBackground>
+    </section>
 {/if}
 
 <HalftoneWave />
@@ -144,4 +107,7 @@
 	#contact-info {
 		margin-bottom: 2rem;
 	}
+
+
+
 </style>

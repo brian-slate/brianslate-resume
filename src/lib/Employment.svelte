@@ -9,8 +9,8 @@
 			<h3 class="job-company">{job.company}</h3>
 			<p class="job-position"><strong>{job.position}</strong> ({job.duration})</p>
 			<p class="job-subheading">Location: {job.location}</p>
-			{#if job['other-duties']}
-				<p class="job-other-duties">Other Duties: {job['other-duties']}</p>
+			{#if job['other-notes']}
+				<p class="job-other-notes">{job['other-notes']}</p>
 			{/if}
 			<div class="responsibilities-container">
 				<ul class="job-responsibilities">
@@ -46,9 +46,10 @@
 		font-style: italic;
 		color: #333;
 	}
-	.job-other-duties {
+	.job-other-notes {
 		font-size: 0.9em;
-		color: #666;
+		color: #333;
+		font-weight: bold;
 	}
 	.responsibilities-container {
 		background-color: rgba(255, 255, 255, 0.7);

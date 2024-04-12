@@ -104,24 +104,24 @@ body {
 	font-family: 'Courier New', monospace;
 	margin: 0 2rem 2rem;
 	line-height: 1.6;
-	column-gap: 40px;
 	background-color: #f9f9f9;
 	color: #333;
 	overflow: auto;
 	position: relative; /* to align the halftone wave in the background */
 }
 
-.app {
+.app .resume {
 	column-count: 3;
+	column-gap: 40px;
 }
 
 @media (max-width: 1200px) { /* tablet */
-	.app {
+	.app .resume {
 		column-count: 2;
 	}
 }
 @media (max-width: 800px) { /* tablet */
-	.app {
+	.app .resume {
 		column-count: 1;
 	}
 }

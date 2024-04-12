@@ -10,137 +10,143 @@
     },
     "summary": "As a Director of Software Engineering, I've found that failing fast is the cheat code to unlocking creativity. I've turned setbacks into successes, pitfalls into platforms, and mistakes into masterstrokes",
     "additionalInfo": [
-        "Fluent in English, conversational in Spanish",
-        "Skilled in clear and effective communication",
-        "Avid player of artistic RPGs, where storytelling meets visual splendor",
-        "Don't call me a plant dad, my yard is a lush oasis",
+        "Skilled in clear and effective communication", 
+        "Described by my peers as 'affable and gregarious'",
+        "Don't just call me a plant dad, my yard is a lush oasis",
         "Enthusiastic collector of fun and funky timepieces",
         "A fan of graphic novels, especially the eerie worlds of Junji Ito",
         "A devotee of sci-fi and fantasy in all forms",
-        "My living space is a curated blend of art and function"
+        "My living space is a curated blend of art and functional pieces"
     ],
     "skills": [
         {
+            "category": "Management",
             "name": "Leadership",
             "level": 5,
-            "category": "Management",
             "subitems": [
-                "KPI Tracking",
-                "Resource Allocation",
-                "Agile Methodology"
+                "Championing Best Practices",
+                "Celebrating Team Successes and Efforts",
+                "Cultivating Blameless Team Culture",
+                "Driving Agile Methodologies",
+                "Crafting Meaningful KPIs for Real Impact"
             ]
         },
         {
-            "name": "Jira",
-            "level": 3,
             "category": "Management",
-            "subitems": [
-                "Customization",
-                "Integration"
-            ]
-        },
-        {
-            "name": "Communications",
+            "name": "Tools",
             "level": 5,
-            "category": "Management",
             "subitems": [
-                "Email",
-                "Slack",
-                "Teams", 
-                "Zoom",
-                "Text"
+                "Excel - Makes the world go round",
+                "Jira, Asana, Trello, Teamwork",
+                "Confluence, SharePoint, PowerPoint",
+                "Slack, Teams, Zoom",
+                "Salesforce, Airtable"
             ]
         },
         {
-            "name": "AWS",
-            "level": 5,
             "category": "Infrastructure",
+            "name": "Cloud SaaS",
+            "level": 5,
             "subitems": [
-                "IAM",
-                "EC2",
-                "EFS",
-                "Secrets Manager",
-                "Route 53",
-                "RDS",
-                "CloudWatch",
-                "S3",
-                "SNS",
-                "ECR",
-                "Cost Explorer",
+                "[Experienced in similar Azure and GCP Services]",
+                "...",
+                "IAM & ControlTower",
+                "EC2, ECR & ECS",
+                "SNS & SQS",
+                "S3, RDS, & Dynamo",
+                "CloudFront & CloudFormation",
+                "Lambda & API Gateway",
+                "CloudWatch & EventBridge",
+                "CodeBuild/Commit/Deploy",
                 "ElastiCache",
-                "Lambda",
-                "KMS"
+                "KMS, Param Store, & Secrets Manager",
+                "Amplify Apps",
+                "SAM - Serverless App Model & CLI"
             ]
         },
         {
-            "name": "Jenkins",
-            "level": 5,
             "category": "Infrastructure",
+            "name": "DevOps / Platform Engineering",
+            "level": 5,
             "subitems": [
-                "Declarative Pipelines",
-                "Shared Libraries"
-            ]
-        },
-        {
-            "name": "SaaS Platforms",
-            "level": 3,
-            "category": "Alerting & Monitoring",
-            "subitems": [
+                "Github Actions",
+                "Github tooling for Testing & Static Analysis",
+                "Jenkins Declarative Pipelines",
+                "Jenkins Shared Libraries",
                 "Sentry",
-                "NewRelic",
+                "CloudWatch",
                 "Snyk",
                 "Netdata",
-                "CloudWatch"
+                "NewRelic",
+                "Terraform & OpenTofu - IaC"
             ]
         },
         {
-            "name": "Single Page Applications & PWA",
-            "level": 5,
             "category": "Front-End",
+            "name": "Single Page Applications & PWAs",
+            "level": 5,
             "subitems": [
-                "React 17",
-                "Angular 14",
-                "SvelteKit 1.0"
+                "React",
+                "Angular",
+                "Vue",
+                "SvelteKit",
+                "Vanilla JS - ES6+",
+                "Ionic, Capacitor & Cordova"
             ]
         },
         {
+            "category": "Back-End",
             "name": "Server Side Languages",
             "level": 4,
-            "category": "Back-End",
             "subitems": [
-                "PHP",
                 "Node.js",
-                "Laravel 8+",
                 "AWS Lambda",
+                "PHP",
+                "Python",
+                "Laravel 8+",
                 "C# .NET Core"
             ]
         },
         {
+            "category": "Databases",
             "name": "Relational & Nonrelational Databases",
             "level": 5,
-            "category": "Databases",
             "subitems": [
                 "MySQL",
+                "DynamoDB",
                 "MariaDB",
-                "Redis/Elasticache",
                 "SQL Server",
+                "Redis/Elasticache",
                 "SQLite"
             ]
         },
         {
-            "name": "IDEs",
-            "level": 2,
-            "category": "IDE",
+            "category": "eCommerce",
+            "name": "Platforms",
+            "level": 5,
             "subitems": [
-                "Visual Studio 2010/2013",
-                "Sublime Text 3",
-                "VS Code"
+                "WooCommerce",
+                "Shopify",
+                "Stripe",
+                "Squarespace"
             ]
         },
         {
+            "category": "Other Tools",
+            "name": "IDEs & Shells",
+            "level": 2,
+            "subitems": [
+                "VS Code",
+                "Zsh & Bash",
+                "SSH",
+                "Warp",
+                "Visual Studio 2010/2013"
+            ]
+        },
+        {
+            "category": "Code Versioning",
             "name": "Git & SVN",
             "level": 4,
-            "category": "Code Versioning",
             "subitems": [
                 "GitHub",
                 "BitBucket",
@@ -155,14 +161,14 @@
             "position": "Director of Software Engineering",
             "location": "Los Alamitos, CA (Remote)",
             "responsibilities": [
-                "Performed multiple roles including scrum master, engineering manager, software developer, and DevOps/platform engineer",
-                "Built and refined onboarding processes for the team",
-                "Managed hiring and training for over 10 developers & contractors",
-                "Mentored engineers to ramp up their career growth",
-                "Modernized and scaled a monolithic PHP application",
-                "Automated nearly 80% of pre-existing manual processes",
-                "Managed a team of 8+ amid changing priorities and staff",
-                "Became highly fluent in DevOps infrastructure and deployment"
+                "Championed a culture of excellence, leading by example to embed best practices across our technology spectrum — coding, infrastructure, documentation — enhancing team collaboration and conduct.",
+                "Excelled in diverse roles — Scrum Master, Engineering Manager, Software Developer, and DevOps/Platform Engineer — demonstrating flexibility and expertise across the development lifecycle.",
+                "Successfully integrated agile methodologies into our core development practices, optimizing workflows and project delivery.",
+                "Managed and dynamically adapted a team of 10+ members, overseeing hiring, onboarding, and training of developers and contractors, while fostering an environment for career growth.",
+                "Streamlined team processes including onboarding, daily scrum meetings, development, code review, and QA & testing, significantly improving efficiency and team performance.",
+                "Led the modernization and scaling of a monolithic PHP & React application, enhancing performance and scalability.",
+                "Architected and developed a CI/CD platform from the ground up, automating previously manual processes and significantly reducing deployment errors and increasing deployment cadence.",
+                "Enhanced local application development consistency and deployment by adopting Docker and leveraging ECS Fargate."
             ]
         },
         {
@@ -173,8 +179,8 @@
             "responsibilities": [
                 "Migrated an aging Angular.js SPA to Angular using event-driven observable architecture",
                 "Implemented a cross-team tool for managing iframed applications, empowering multi-faceted development teams to build/deploy autonomously",
-                "Built and maintained the centralized Admin UI portal to provide dynamic configuration for all other services",
-                "Showcased a VR-based support app to over 2,000 attendees at a customer experience conference",
+                "Built and maintained our centralized 'Admin UI' portal to provide dynamic configuration for all other company micro-services",
+                "Showcased our VR-based support app to 2,000+ attendees at our company keynote, introduced by our CEO",
                 "Participated in the transition process during the acquisition of Interactive Intelligence, ensuring a smooth integration of technologies and teams"
             ]
         },             
@@ -183,10 +189,13 @@
             "duration": "Jan 2012 – Sep 2014",
             "position": "CTO/Lead Developer",
             "location": "Madison, WI",
+            "other-notes": "BlueTree Network was acquired by Providence St. Joseph Health in 2019.",
             "responsibilities": [
+                "Crafted a platform to expertly match healthcare facilities with elite Epic consultants for post-launch software implementation, streamlining the connection process.",
                 "Led initial development team as CTO",
-                "Transformed a .NET MVC system into an Ember.js SPA",
-                "Acted as a technical bridge between founders and the development team"
+                "Acted as a technical bridge between founders and the development team",
+                "Transformed a .NET webforms/MVC system into an elegant Ember.js SPA & REST API",
+                "Assisted in white-labeling BlueTree's software platform for other organizations, such as United Way."
             ]
         },
         {
@@ -195,9 +204,10 @@
             "position": "Senior Information Processing Consultant",
             "location": "Madison, WI",
             "responsibilities": [
+                "Built several research database systems for the UW Atherosclerosis Imaging Research Program",
                 "Created a comprehensive HR management portal using Ruby on Rails & SQL Server",
-                "Migrated and developed two departmental websites using Drupal",
-                "Developed a Query Manager tool for research database systems",
+                "Migrated and developed two public-facing departmental websites using Drupal",
+                "Developed an in-house 'Query Manager' tool allowing researcher self-service access to warehoused data",
                 "Built tools to quickly scaffold applications to meet department needs"
             ]
         }
@@ -210,15 +220,8 @@
             "school": "University of Wisconsin, Madison, WI"
         },
         {
-            "degree": "Zend Certification (Zend Certified Engineer)",
-            "field": "PHP",
-            "endYear": 2007,
-            "school": "Zend"
-        },
-        {
             "degree": "AWS Certified Developer",
             "field": "Cloud Computing",
-            "startYear": 2016,
             "endYear": 2022,
             "school": "Amazon",
             "credentialID": "BQGYDFZ1BFEQ1FSF",

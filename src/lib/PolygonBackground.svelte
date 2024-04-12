@@ -103,7 +103,7 @@
 	});
 </script>
 
-<div style="position: relative;" bind:this={slotContainer}>
+<div class="polygon-background" style="position: relative;" bind:this={slotContainer}>
 	<svg style="position: absolute; width: 100%; height: 100%; z-index: -1;">
 		<path
 			d={leftShapePath}

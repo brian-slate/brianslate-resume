@@ -40,7 +40,7 @@
 		<div class="skill-row">
 		  <span class="skill-text">{name}</span>
 		  <div class="battery-container">
-			<BatteryMeter {level} />
+			<!-- <BatteryMeter {level} /> -->
 		  </div>
 		</div>
 		{#if subitems}
