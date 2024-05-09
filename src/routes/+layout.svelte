@@ -16,6 +16,20 @@
 </div>
 
 <style>
+.app.resume {
+	column-count: 3;
+	column-gap: 40px;
+}
 
+@media (max-width: 1200px) { /* tablet */
+	.app.resume {
+		column-count: 2;
+	}
+}
+@media (max-width: 800px) { /* tablet */
+	.app.resume {
+		column-count: 1;
+	}
+}
 	
 </style>
