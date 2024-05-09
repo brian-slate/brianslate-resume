@@ -4,23 +4,24 @@
 
 <section id="summary">
 	<div class="title-container">
-		<h2>Staff Engineer - Browse and Catalog Engineering @ Lululemon</h2>
+		<h2>Engineering Manager, Efficiency @ Stripe</h2>
 	</div>
 	<div class="text-container" id="hover-area">
 		<!-- <p>{resumeData.summary} <span id="sparkle" class="sparkle-icon">✨</span></p> -->
 		<pre>
-Hello Lululemon Team,
+Hello Stripe Team,
 
-I’m thrilled at the chance to apply for the Staff Engineer role at Lululemon. As someone deeply passionate about blending technology with wellness, I feel like this position was made for me.
+I’m Brian Slate, excited to apply for the Engineering Manager position on the Efficiency team. With over 15 years of software development and management experience, particularly in optimizing cloud infrastructure, I am ready to contribute to Stripe’s strategic initiatives.
 
-My background in computer science, paired with over a decade of engineering leadership — including leading the build-out and eventual acquisition of a prior startup at Bluetree Network — has prepared me well to jump into Lululemon’s technology domain. I love the idea of leading a team that’s as committed to innovation and quality as I am, especially in a place that puts such a strong emphasis on growth and community.
+At CI Solutions, where I served as Director of Software Engineering, I led significant projects that enhanced cloud resource scalability and cost efficiency. This experience aligns closely with the goals of the Efficiency team at Stripe, where I am eager to drive efforts that improve infrastructure efficiency and reduce costs per transaction.
 
-At CI Solutions, I led a team through major overhauls and new implementations that have sharpened my skills in making technical processes smoother and more efficient. What excites me about working at Lululemon is not just working on cutting-edge tech but doing so in a company that cares deeply about its impact on the world.
+I look forward to the opportunity to leverage my expertise at Stripe to help scale operations effectively while upholding a best-in-class price/performance ratio.
 
-I’m looking forward to potentially discussing how I can bring my love for tech and my team-centric leadership style to Lululemon. Thanks for considering my application — I can’t wait to meet and share what I bring to the table.
+Thank you for considering my application.
 
-Best,
-Brian Slate
+Warm regards,
+
+Brian Slate						
 		</pre>
 	</div>
 </section>

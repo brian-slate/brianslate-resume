@@ -29,6 +29,7 @@
       align-items: flex-end;
       background-color: rgba(255, 255, 255, 0.6);
       margin-bottom: 1.5rem;
+      /* text-align:right; */
     }
   
     .header::before {
@@ -46,16 +47,15 @@
     }
   
     .header-text h1 {
-      font-size: 2.5em; /* Makes the name larger */
+      font-size: 2.5em; /* Brian Slate */
     }
   
     .header-text p {
-      font-size: 1.5em; /* Makes the title larger */
+      font-size: 1.5em; /* Title */
     }
 
     @media (max-width: 750px) { /* tablet */
       .header {
-        text-align: right;
         font-size: 1rem;
         align-items: flex-start;
       }

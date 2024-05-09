@@ -50,7 +50,7 @@
 
 <svelte:head>
 	<title>{`${resumeData?.name} - ${resumeData?.title}` || 'Loading...'}</title>
-	<meta name="description" content="Brian T. Slate - Director of Software Engineering" />
+	<meta name="description" content="Brian T. Slate - Principal Tech Consultant & Software Architect" />
 </svelte:head>
 
 {#if resumeData}
