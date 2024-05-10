@@ -5,7 +5,6 @@
 
 <div class="app cover-letter">
 	<!-- <Header /> -->
-
 	<slot />
 
 	<!-- <footer>
@@ -17,18 +16,18 @@
 </div>
 
 <style>
-.app .cover-letter {
+.app.cover-letter {
     column-count: 1 !important;
     margin: auto;
-    padding: 20px;
+    /* padding: 20px; */
     /* background-color: white; */
 }
 
-.app .cover-letter h1, 
-.app .cover-letter h2, 
-.app .cover-letter p {
+/* .app.cover-letter h1, 
+.app.cover-letter h2, 
+.app.cover-letter p {
     margin-top: 0.5em;
-}
+} */
 
 @media (max-width: 1200px), (max-width: 800px) {
     .app.cover-letter {

@@ -12,7 +12,8 @@
 		"test": "playwright test",
 		"test:unit": "vitest",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
+		"format": "prettier --plugin-search-dir . --write .",
+		"deploy": "npm run build && aws s3 cp ./build s3://brian-slate.com --recursive && aws cloudfront create-invalidation --distribution-id E3JG4XAQBFZIVT --paths \"/*\""
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",

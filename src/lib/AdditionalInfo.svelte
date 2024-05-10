@@ -11,6 +11,7 @@
 	<h2 class="section-title">Additional Information</h2>
 	<ul class="info-list">
 		{#each resumeData.additionalInfo as info}
+			<!-- svelte-ignore a11y-mouse-events-have-key-events -->
 			<li class="info-item" on:mouseover={handleMouseOver}>
 				<span class="info-icon">✔</span>
 				<span class="info-text">{info}</span>

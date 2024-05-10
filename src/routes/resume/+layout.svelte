@@ -1,6 +1,6 @@
 <script>
 	import Header from '$lib/Header.svelte';
-	import './styles.css';
+	import '../styles.css';
 </script>
 
 <div class="app resume">

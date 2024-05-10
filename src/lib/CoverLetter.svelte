@@ -1,25 +1,23 @@
 <script>
-	export let resumeData;
+	// export let resumeData;
 </script>
 
 <section id="summary">
 	<div class="title-container">
-		<h2>Engineering Manager, Efficiency @ Stripe</h2>
+		<h2>Staff Partner Services and Tools Engineer @ Crunchyroll</h2>
 	</div>
 	<div class="text-container" id="hover-area">
 		<!-- <p>{resumeData.summary} <span id="sparkle" class="sparkle-icon">✨</span></p> -->
 		<pre>
-Hello Stripe Team,
+Hello Crunchyroll Team,
 
-I’m Brian Slate, excited to apply for the Engineering Manager position on the Efficiency team. With over 15 years of software development and management experience, particularly in optimizing cloud infrastructure, I am ready to contribute to Stripe’s strategic initiatives.
+With over 15 years of software development experience, especially in building and optimizing developer tools and testing frameworks, I am thrilled at the prospect of contributing to Crunchyroll’s mission of enhancing anime accessibility globally. As a regular anime fan and a Crunchyroll user myself, I have a deep appreciation for the content and community you've built, and I'm eager to help expand its reach and impact.
 
-At CI Solutions, where I served as Director of Software Engineering, I led significant projects that enhanced cloud resource scalability and cost efficiency. This experience aligns closely with the goals of the Efficiency team at Stripe, where I am eager to drive efforts that improve infrastructure efficiency and reduce costs per transaction.
+At CI Solutions, as Director of Software Engineering, I led initiatives that developed robust tooling and observability solutions, significantly improving both build and test automation infrastructure. This experience aligns closely with the objectives of Crunchyroll, where I am enthusiastic about driving efforts that enhance developer productivity and support the integration of your services.
 
-I look forward to the opportunity to leverage my expertise at Stripe to help scale operations effectively while upholding a best-in-class price/performance ratio.
+I hope the timing works out and we can connect!
 
-Thank you for considering my application.
-
-Warm regards,
+Cheers,
 
 Brian Slate						
 		</pre>
@@ -39,26 +37,5 @@ Brian Slate
 		margin-bottom: 10px;
 		position: relative;
 		cursor: pointer; /* Changed cursor */
-	}
-
-	.quote-icon {
-		font-size: 2em;
-		position: absolute;
-		color: black; /* Default color */
-		transition: all 0.3s ease;
-	}
-
-	#start-quote {
-		top: 0;
-		left: 0;
-	}
-
-	#end-quote {
-		bottom: 0;
-		right: 0;
-	}
-
-	#hover-area:hover .quote-icon {
-		transform: scale(3);
 	}
 </style>
