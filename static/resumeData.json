@@ -1,22 +1,22 @@
 {
     "name": "Brian Slate",
-    "title": "Principal Tech Consultant & Software Architect",
+    "title": "Senior Software Architect & Technology Consultant",
     "contact": {
-        "address": "2727 Medlow Ave, Los Angeles, CA, 90065",
-        "tel": "+1 608.386.0560",
+        "tel": "+1 608.352.0560",
         "email": "briantslate@gmail.com",
         "website": "https://brian-slate.com",
+        "github": "https://github.com/brian-slate",
         "linkedIn": "https://www.linkedin.com/in/brianslate/"
     },
-    "summary": "As a Director of Software Engineering, I've found that failing fast is the cheat code to unlocking creativity. I've turned setbacks into successes, pitfalls into platforms, and mistakes into masterstrokes",
+    "summary": "As a Senior Software Architect and Technology Consultant, I transform complex ideas into engaging user experiences. I specialize in creating innovative solutions that meet business needs through modern technologies and collaborative problem-solving. My expertise includes tech stack selection, system modernization, and building robust CI/CD platforms. Each project is a rewarding journey that blends technical excellence with creative problem-solving to deliver exceptional results.",
     "additionalInfo": [
-        "Skilled in clear and effective communication", 
+        "Skilled in clear and effective communication",
         "Described by my peers as 'affable and gregarious'",
         "Don't just call me a plant dad, my yard is a lush oasis",
-        "Enthusiastic collector of fun and funky timepieces",
-        "A fan of graphic novels, especially the eerie worlds of Junji Ito",
-        "A devotee of sci-fi and fantasy in all forms",
-        "My living space is a curated blend of art and functional pieces"
+        "Fallen victim to many home DIY projects",
+        "A fan of graphic novels, and a devotee of sci-fi and fantasy in all forms",
+        "3D printing enthusiast (someone stop this guy from printing yet another planter)",
+        "Enthusiastic collector of unique and funky timepieces"
     ],
     "skills": [
         {
@@ -49,7 +49,6 @@
             "level": 5,
             "subitems": [
                 "[Experienced in similar Azure and GCP Services]",
-                "...",
                 "IAM & ControlTower",
                 "EC2, ECR & ECS",
                 "SNS & SQS",
@@ -60,8 +59,10 @@
                 "CodeBuild/Commit/Deploy",
                 "ElastiCache",
                 "KMS, Param Store, & Secrets Manager",
-                "Amplify Apps",
-                "SAM - Serverless App Model & CLI"
+                "...",
+                "AWS Amplify ",
+                "SST - Serverless Stack",
+                "SAM - Serverless App Model"
             ]
         },
         {
@@ -83,28 +84,45 @@
         },
         {
             "category": "Front-End",
-            "name": "Single Page Applications & PWAs",
+            "name": "Frameworks & Libraries",
             "level": 5,
             "subitems": [
                 "React",
-                "Angular",
-                "Vue",
-                "SvelteKit",
+                "Typescript",
                 "Vanilla JS - ES6+",
+                "SvelteKit",
+                "Angular",
+                "Next.js",
+                "Vue",
                 "Ionic, Capacitor & Cordova"
             ]
         },
         {
+            "category": "Front-End",
+            "name": "Build Tooling and Testing",
+            "level": 5,
+            "subitems": [
+                "Webpack, Vite",
+                "Redux, Recoil, MobX",
+                "Sass, Less, Stylus",
+                "PostCSS, Autoprefixer",
+                "ESLint, Prettier",
+                "Jest, Chai, Mocha, Cypress"
+            ]
+        },
+        {
             "category": "Back-End",
-            "name": "Server Side Languages",
+            "name": "Languages & Frameworks",
             "level": 4,
             "subitems": [
                 "Node.js",
                 "AWS Lambda",
                 "PHP",
+                "Laravel",
+                "C# .NET Core",
+                "Ruby / Rails",
                 "Python",
-                "Laravel 8+",
-                "C# .NET Core"
+                "Java"
             ]
         },
         {
@@ -115,6 +133,7 @@
                 "MySQL",
                 "DynamoDB",
                 "MariaDB",
+                "PostgreSQL",
                 "SQL Server",
                 "Redis/Elasticache",
                 "SQLite"
@@ -156,19 +175,32 @@
     ],
     "employment": [
         {
+            "company": "Orbit",
+            "duration": "Jan 2024 – Present",
+            "position": "Technical Partner - Startup",
+            "location": "Los Angeles, CA",
+            "responsibilities": [
+                "Built Proof of Concept using React & Node w/Amplify and Twilio API to validate project's technical direction.",
+                "Collaborated in the evaluation and selection of the tech stack, and played a key role in choosing a development partner to ensure future flexibility and scalability.",
+                "Oversaw the development of the MVP, ensuring alignment with project goals and technical requirements.",
+                "Provided ongoing technical and product advice, participated in alignment meetings, refined user experience, and collaborated on branding and documentation efforts."
+            ]
+        },
+        {
             "company": "CI Solutions",
-            "duration": "May 2022 – Present",
+            "duration": "May 2022 – Jan 2024",
             "position": "Director of Software Engineering",
             "location": "Los Alamitos, CA (Remote)",
             "responsibilities": [
+                "Led the modernization of a monolithic PHP & React application, enhancing stability, performance and scalability.",
+                "Built and deployed AWS lambda microservices leveraging both SAM and SST.",
+                "Architected and developed a CI/CD platform from the ground up using Jenkins and Github Actions, heavily backed by automated testing, resulting in increased deployment cadence and confidence.",
+                "Enhanced application development consistency by adopting local Docker dev environments and containerized deployments via ECS Fargate.",
                 "Championed a culture of excellence, leading by example to embed best practices across our technology spectrum — coding, infrastructure, documentation — enhancing team collaboration and conduct.",
                 "Excelled in diverse roles — Scrum Master, Engineering Manager, Software Developer, and DevOps/Platform Engineer — demonstrating flexibility and expertise across the development lifecycle.",
                 "Successfully integrated agile methodologies into our core development practices, optimizing workflows and project delivery.",
                 "Managed and dynamically adapted a team of 10+ members, overseeing hiring, onboarding, and training of developers and contractors, while fostering an environment for career growth.",
-                "Streamlined team processes including onboarding, daily scrum meetings, development, code review, and QA & testing, significantly improving efficiency and team performance.",
-                "Led the modernization and scaling of a monolithic PHP & React application, enhancing performance and scalability.",
-                "Architected and developed a CI/CD platform from the ground up, automating previously manual processes and significantly reducing deployment errors and increasing deployment cadence.",
-                "Enhanced local application development consistency and deployment by adopting Docker and leveraging ECS Fargate."
+                "Streamlined team processes including onboarding, daily scrum meetings, development, code review, and QA & testing, significantly improving efficiency and team performance."
             ]
         },
         {
@@ -176,12 +208,13 @@
             "duration": "Sep 2014 – May 2022",
             "position": "Lead Software Engineer",
             "location": "Madison, WI / Los Angeles, CA (Remote)",
+            "other-notes": "Genesys acquired Interactive Intelligence in December of 2016",
             "responsibilities": [
-                "Migrated an aging Angular.js SPA to Angular using event-driven observable architecture",
-                "Implemented a cross-team tool for managing iframed applications, empowering multi-faceted development teams to build/deploy autonomously",
-                "Built and maintained our centralized 'Admin UI' portal to provide dynamic configuration for all other company micro-services",
-                "Showcased our VR-based support app to 2,000+ attendees at our company keynote, introduced by our CEO",
-                "Participated in the transition process during the acquisition of Interactive Intelligence, ensuring a smooth integration of technologies and teams"
+                "Developed and managed Admin UI portal, enabling dynamic configuration and integration for the company's services and software features.",
+                "Developed and integrated tooling to support coordinated iframed applications, empowering development teams to build/deploy independent apps autonomously",
+                "Migrated an aging Angular.js SPA in coffeescript to modern Angular and typescript using event-driven observable architecture",
+                "Participated in the transition process during the acquisition of Interactive Intelligence, ensuring a smooth integration of technologies and teams",
+                "Presented an experimental VR-based support app to over 2,000 attendees at the company keynote, introduced by the former Interactive Intelligence CEO"
             ]
         },             
         {
@@ -201,7 +234,7 @@
         {
             "company": "University of Wisconsin Department of Medicine",
             "duration": "Sep 2005 – Sep 2012",
-            "position": "Senior Information Processing Consultant",
+            "position": "Senior Full Stack Developer",
             "location": "Madison, WI",
             "responsibilities": [
                 "Built several research database systems for the UW Atherosclerosis Imaging Research Program",
@@ -222,32 +255,9 @@
         {
             "degree": "AWS Certified Developer",
             "field": "Cloud Computing",
-            "endYear": 2022,
             "school": "Amazon",
             "credentialID": "BQGYDFZ1BFEQ1FSF",
             "status": "Expired"
-        }
-    ],
-    "projects": [
-        {
-            "name": "Tyler API",
-            "status": "Migration seems to be going well!"
-        },
-        {
-            "name": "Batch Printing",
-            "status": "In Progress"
-        },
-        {
-            "name": "Tina Timekeeping",
-            "status": "Final Development Stages"
-        },
-        {
-            "name": "Ruby API",
-            "status": "Completed"
-        },
-        {
-            "name": "TimeTracker",
-            "status": "Discontinued"
         }
     ]
 }

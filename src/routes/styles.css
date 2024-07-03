@@ -145,9 +145,16 @@ ul {
 	margin-top: 2rem;
     border: 1px solid rgba(0,0,0,0.4);
 }
+body.pdf-generation header {
+	box-shadow: none !important;
+}
 
 body.pdf-generation .footer-container,
 body.pdf-generation .lightning
  {
 	display: none !important;
+}
+
+#profile-header {
+		grid-column: 1 / -1;
 }

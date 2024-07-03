@@ -21,16 +21,26 @@
 
 	const generatePDF = async () => {
 		document.body.classList.add('pdf-generation');
+		
 		const canvas = await html2canvas(document.body);
 		const imgData = canvas.toDataURL('image/png');
-		
-		const pdf = new jsPDF('p', 'mm', 'a4');  // Set the PDF to use A4 size
-		const pdfWidth = pdf.internal.pageSize.getWidth();
-		const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
-		
+
+		const imgWidth = canvas.width;
+		const imgHeight = canvas.height;
+
+		// Convert canvas dimensions from pixels to millimeters
+		const pdfWidth = imgWidth * 0.264583;
+		const pdfHeight = imgHeight * 0.264583;
+
+		// Create a PDF with the exact dimensions of the canvas
+		const pdf = new jsPDF('p', 'mm', [pdfWidth, pdfHeight]);
+
+		// Add the image to the PDF
 		pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
-		// debugger;
+
+		// Save the PDF
 		pdf.save('brian-slate-resume.pdf');
+
 		document.body.classList.remove('pdf-generation');
 	};
 
@@ -54,94 +64,138 @@
 </svelte:head>
 
 {#if resumeData}
-  <ProfileHeader {resumeData} />
+	<ProfileHeader {resumeData} />
 
-	<section id="contact-info">
-		<h2>
-			Contact Info
-			<button id="generate-pdf" title="Download PDF" on:click={generatePDF} style="background: none; border: none; cursor: pointer;">📄</button>
-		</h2>
-		<p>Email: {resumeData.contact.email}</p>
-		<p>Mobile: {resumeData.contact.tel}</p>
-		<p>Website: <a href={resumeData.contact.website}>{resumeData.contact.website}</a></p>
-		<p>LinkedIn: <a href={resumeData.contact.linkedIn}>{resumeData.contact.linkedIn}</a></p>
-	</section>
+	<div class="content">
+		<section id="contact-info">
+			<h2>
+				Contact Info
+				<button id="generate-pdf" title="Download PDF" on:click={generatePDF} style="background: none; border: none; cursor: pointer;">📄</button>
+			</h2>
+			<p>Email: {resumeData.contact.email}</p>
+			<p>Mobile: {resumeData.contact.tel}</p>
+			<p>Website: <a href={resumeData.contact.website}>{resumeData.contact.website}</a></p>
+			<p>Github: <a href={resumeData.contact.github}>{resumeData.contact.github}</a></p>
+			<p>LinkedIn: <a href={resumeData.contact.linkedIn}>{resumeData.contact.linkedIn}</a></p>
+		</section>
 
-	<!-- <section id="linkedin">
-    <h2>LinkedIn</h2>
-    <p><a href="https://www.linkedin.com/in/your-linkedin-profile/" target="_blank">Your LinkedIn Profile</a></p>
-  	</section> -->
+		<section id="summary" class="rounded-section">
+			<PolygonBackground leftColor={lightGrayThemeColor} rightColor={purpleThemeColor}>
+				<div class="content-container">
+					<Summary {resumeData} />
+				</div>
+			</PolygonBackground>
+		</section>
 
-	<section id="summary" class="rounded-section">
-		<PolygonBackground leftColor={lightGrayThemeColor} rightColor={purpleThemeColor}>
-			<div class="content-container">
-				<Summary {resumeData} />
-			</div>
-		</PolygonBackground>
-	</section>
+		<section id="education" class="rounded-section">
+			<PolygonBackground leftColor={lightGrayThemeColor} rightColor={'rgba(0, 0, 0, 0.05)'}>
+				<div class="content-container">
+					<Education {resumeData} />
+				</div>
+			</PolygonBackground>
+		</section>
 
-	<section id="education" class="rounded-section">
-		<PolygonBackground leftColor={lightGrayThemeColor} rightColor={'rgba(0, 0, 0, 0.05)'}>
-			<div class="content-container">
-				<Education {resumeData} />
-			</div>
-		</PolygonBackground>
-	</section>
+		<section id="additional-info" class="rounded-section">
+			<PolygonBackground leftColor={lighterGrayThemeColor} rightColor={lightGrayThemeColor}>
+				<div class="content-container">
+					<AdditionalInfo {resumeData} />
+				</div>
+			</PolygonBackground>
+		</section>
 
+		<section id="employment" class="rounded-section">
+			<PolygonBackground leftColor={lightGrayThemeColor} rightColor={greenThemeColor}>
+				<div class="content-container">
+					<Employment {resumeData} />
+				</div>
+			</PolygonBackground>
+		</section>
 
-	<section id="employment" class="rounded-section">
-		<PolygonBackground leftColor={lighterGrayThemeColor} rightColor={lightGrayThemeColor}>
-			<div class="content-container">
-  				<AdditionalInfo {resumeData} />
-			</div>
-		</PolygonBackground>
-	</section>
-
-	<section id="employment" class="rounded-section">
-		<PolygonBackground leftColor={lightGrayThemeColor} rightColor={greenThemeColor}>
-			<div class="content-container">
-				<Employment {resumeData} />
-			</div>
-		</PolygonBackground>
-	</section>
-
-	<section id="skills" class="rounded-section">
-		<PolygonBackground leftColor={goldThemeColor} rightColor={lightGrayThemeColor}>
-			<div class="content-container">
-				<Skills {resumeData} />
-			</div>
-		</PolygonBackground>
-	</section>
+		<section id="skills" class="rounded-section">
+			<PolygonBackground leftColor={goldThemeColor} rightColor={lightGrayThemeColor}>
+				<div class="content-container">
+					<Skills {resumeData} />
+				</div>
+			</PolygonBackground>
+		</section>
+	</div>
 {/if}
 
 <HalftoneWave />
 
 <style>
+	/* header {
+		grid-column: 1 / -1;
+		width: 100%;
+	}
+
+	footer {
+		grid-column: 1 / -1;
+	} */
+
+	.content {
+		display: contents;
+	}
+
 	section {
 		margin-bottom: 1rem;
 	}
+
 	.rounded-section {
 		border-radius: 10px;
 		overflow: hidden; /* to ensure the rounded corners also affect the PolygonBackground */
 		padding: 0;
 	}
+
 	.content-container {
 		padding: 0.5rem 1.5rem;
 		margin: 0;
 	}
-	section {
-		margin-bottom: 1rem;
+
+	#contact-info,
+	#summary,
+	#education,
+	#additional-info {
+		grid-column: 1;
 	}
-	.rounded-section {
-		border-radius: 10px;
-		overflow: hidden;
-		padding: 0;
+
+	#employment {
+		grid-column: 2;
+		grid-row: 2 / span 6;
 	}
-	.content-container {
-		padding: 0.5rem 1.5rem;
-		margin: 0;
+	
+	#skills {
+		grid-column: 3;
+		grid-row: 2 / span 6;
+		
 	}
-	#contact-info {
-		margin-bottom: 2rem;
+
+	@media (max-width: 1200px) { /* tablet */
+		/* .app.resume {
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: auto 1fr auto;
+		} */
+
+		#skills {
+			grid-column: 1 / -1;
+			grid-row: auto;
+		}
+	}
+
+	@media (max-width: 800px) { /* mobile */
+		/* .app.resume {
+			grid-template-columns: 1fr;
+			grid-template-rows: auto 1fr auto;
+		} */
+
+		#contact-info,
+		#summary,
+		#education,
+		#additional-info,
+		#employment,
+		#skills {
+			grid-column: 1;
+			grid-row: auto;
+		}
 	}
 </style>

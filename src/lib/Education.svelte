@@ -9,8 +9,12 @@
 		<p>
 			{edu.degree}, {edu.field} 
 			{#if edu.startYear}
-				({edu.startYear} - {edu.endYear})
-			{:else}
+				{#if edu.endYear}
+					({edu.startYear} - {edu.endYear})
+				{:else}
+					({edu.startYear})
+				{/if}
+			{:else if edu.endYear}
 				({edu.endYear})
 			{/if}
 		</p>

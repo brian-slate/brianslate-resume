@@ -4,11 +4,11 @@
   
 	// Define the custom order for categories
 	const customOrder = [
-	  "Management",
-	  "Infrastructure",
-	  "Alerting & Monitoring",
-	  "Front-End",
-	  "Back-End"
+		"Front-End",
+		"Back-End",
+		"Infrastructure",
+		"Alerting & Monitoring",
+	  	"Management",
 	];
   
 	// Group skills by category and sort them by level

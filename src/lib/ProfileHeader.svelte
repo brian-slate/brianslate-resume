@@ -2,7 +2,7 @@
     export let resumeData;
   </script>
   
-  <header class="header">
+  <header class="header" id="profile-header">
     <img src="/me.jpeg" alt="Brian T. Slate Profile" />
     <div class="header-text">
       <h1>{resumeData.name}</h1>

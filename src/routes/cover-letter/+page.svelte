@@ -6,8 +6,10 @@
 	import { onMount } from 'svelte';
 	import jsPDF from 'jspdf';
 	import html2canvas from 'html2canvas';
+	import jsyaml from 'js-yaml';
 
 	let resumeData = null;
+	let coverLetterData = null;
 	let lightGrayThemeColor,
 		goldThemeColor,
 		orangeThemeColor,
@@ -25,7 +27,6 @@
 		const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
 		
 		pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
-		// debugger;
 		pdf.save('brian-slate-resume.pdf');
 		document.body.classList.remove('pdf-generation');
 	};
@@ -41,6 +42,9 @@
 
 		const res = await fetch('/resumeData.json');
 		resumeData = await res.json();
+		const res2 = await fetch('/coverLetterData.yml');
+		const text = await res2.text();
+		coverLetterData = jsyaml.load(text);
 	});
 </script>
 
@@ -49,7 +53,7 @@
 	<meta name="description" content="Brian T. Slate - Principal Tech Consultant & Software Architect" />
 </svelte:head>
 
-{#if resumeData}
+{#if resumeData && coverLetterData}
 <ProfileHeader {resumeData} />
 
     <section id="contact-info">
@@ -60,18 +64,14 @@
         <p>Email: {resumeData.contact.email}</p>
         <p>Mobile: {resumeData.contact.tel}</p>
         <p>Website: <a href={resumeData.contact.website}>{resumeData.contact.website}</a></p>
+		<p>Github: <a href={resumeData.contact.github}>{resumeData.contact.github}</a></p>
         <p>LinkedIn: <a href={resumeData.contact.linkedIn}>{resumeData.contact.linkedIn}</a></p>
     </section>
-
-    <!-- <section id="linkedin">
-    <h2>LinkedIn</h2>
-    <p><a href="https://www.linkedin.com/in/your-linkedin-profile/" target="_blank">Your LinkedIn Profile</a></p>
-    </section> -->
 
     <section id="summary" class="rounded-section">
         <PolygonBackground leftColor={lightGrayThemeColor} rightColor={purpleThemeColor}>
             <div class="content-container">
-                <CoverLetter {resumeData} />
+                <CoverLetter {coverLetterData} />
             </div>
         </PolygonBackground>
     </section>
@@ -92,22 +92,7 @@
 		padding: 0.5rem 1.5rem;
 		margin: 0;
 	}
-	section {
-		margin-bottom: 1rem;
-	}
-	.rounded-section {
-		border-radius: 10px;
-		overflow: hidden;
-		padding: 0;
-	}
-	.content-container {
-		padding: 0.5rem 1.5rem;
-		margin: 0;
-	}
 	#contact-info {
 		margin-bottom: 2rem;
 	}
-
-
-
 </style>

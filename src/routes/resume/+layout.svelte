@@ -1,10 +1,8 @@
 <script>
-	import Header from '$lib/Header.svelte';
 	import '../styles.css';
 </script>
 
 <div class="app resume">
-	<!-- <Header /> -->
 
 	<slot />
 
@@ -17,19 +15,27 @@
 
 <style>
 .app.resume {
-	column-count: 3;
-	column-gap: 40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 40px;
+	align-items: start;
+}
+
+
+footer {
+	grid-column: 1 / -1;
 }
 
 @media (max-width: 1200px) { /* tablet */
 	.app.resume {
-		column-count: 2;
+		grid-template-columns: 1fr 1fr;
 	}
 }
-@media (max-width: 800px) { /* tablet */
+
+@media (max-width: 800px) { /* mobile */
 	.app.resume {
-		column-count: 1;
+		grid-template-columns: 1fr;
 	}
 }
-	
 </style>
