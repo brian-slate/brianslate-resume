@@ -16,7 +16,7 @@
 <style>
 .app.resume {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 0.8fr 1.2fr 0.8fr;
 	grid-template-rows: auto;
 	gap: 40px;
 	align-items: start;
@@ -29,7 +29,7 @@ footer {
 
 @media (max-width: 1200px) { /* tablet */
 	.app.resume {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 0.5fr 1fr;
 	}
 }
 
