@@ -15,7 +15,7 @@
 
 <style>
 	pre {
-		white-space: pre-wrap; /* Ensures the text wraps properly */
+		white-space: pre-wrap;
 		font-size: 1.5rem;
 	}
 

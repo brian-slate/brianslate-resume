@@ -15,18 +15,18 @@
 
 <style>
 	.text-container {
-		background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+		background-color: rgba(255, 255, 255, 0.6);
 		padding: 20px;
 		border-radius: 5px;
 		margin-bottom: 10px;
 		position: relative;
-		cursor: pointer; /* Changed cursor */
+		cursor: pointer;
 	}
 
 	.quote-icon {
 		font-size: 2em;
 		position: absolute;
-		color: black; /* Default color */
+		color: black;
 		transition: all 0.3s ease;
 	}
 

@@ -41,7 +41,6 @@
 		const debouncedDraw = debounce(drawHalftoneWavePattern, 250);
 		window.addEventListener('resize', debouncedDraw);
 
-		// Cleanup the event listener when the component is destroyed
 		return () => {
 			window.removeEventListener('resize', debouncedDraw);
 		};

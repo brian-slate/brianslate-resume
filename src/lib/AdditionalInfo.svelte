@@ -21,13 +21,6 @@
 </section>
 
 <style>
-	/* #additional-info {
-		background-color: #f9f9f9;
-		padding: 20px;
-		border-radius: 10px;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	} */
-
 	.section-title {
 		font-size: 1.5em;
 		font-weight: bold;

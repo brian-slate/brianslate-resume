@@ -1,6 +1,6 @@
 {
     "name": "Brian Slate",
-    "title": "Senior Software Architect & Technology Consultant",
+    "title": "Full Stack Developer & Technology Leader",
     "contact": {
         "tel": "+1 608.352.0560",
         "email": "briantslate@gmail.com",
@@ -8,7 +8,7 @@
         "github": "https://github.com/brian-slate",
         "linkedIn": "https://www.linkedin.com/in/brianslate/"
     },
-    "summary": "As a Senior Software Architect and Technology Consultant, I transform complex ideas into engaging user experiences. I specialize in creating innovative solutions that meet business needs through modern technologies and collaborative problem-solving. My expertise includes tech stack selection, system modernization, and building robust CI/CD platforms. Each project is a rewarding journey that blends technical excellence with creative problem-solving to deliver exceptional results.",
+    "summary": "I transform complex ideas into engaging user experiences by creating innovative solutions that meet business needs through modern technologies and collaborative problem-solving. My expertise includes tech stack selection, system modernization, and building robust CI/CD platforms. Each project blends technical excellence with creative problem-solving to deliver exceptional results.",
     "additionalInfo": [
         "Skilled in clear and effective communication",
         "Described by my peers as 'affable and gregarious'",
@@ -36,11 +36,9 @@
             "name": "Tools",
             "level": 5,
             "subitems": [
-                "Excel - Makes the world go round",
-                "Jira, Asana, Trello, Teamwork",
+                "Excel, Jira, Asana, Trello",
                 "Confluence, SharePoint, PowerPoint",
-                "Slack, Teams, Zoom",
-                "Salesforce, Airtable"
+                "Slack, Teams, Zoom, Salesforce"
             ]
         },
         {
@@ -107,7 +105,7 @@
                 "Sass, Less, Stylus",
                 "PostCSS, Autoprefixer",
                 "ESLint, Prettier",
-                "Jest, Chai, Mocha, Cypress"
+                "Jest, Vitest, Playwright, Cypress"
             ]
         },
         {

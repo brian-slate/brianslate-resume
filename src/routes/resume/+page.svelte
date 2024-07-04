@@ -124,14 +124,6 @@
 <HalftoneWave />
 
 <style>
-	/* header {
-		grid-column: 1 / -1;
-		width: 100%;
-	}
-
-	footer {
-		grid-column: 1 / -1;
-	} */
 
 	.content {
 		display: contents;
