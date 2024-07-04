@@ -28,8 +28,7 @@
       justify-content: space-between;
       align-items: flex-end;
       background-color: rgba(255, 255, 255, 0.6);
-      margin-bottom: 1.5rem;
-      /* text-align:right; */
+      margin-bottom: -1rem; /* compensate for the CSS grid 40 gap on everything */
     }
   
     .header::before {

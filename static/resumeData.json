@@ -222,10 +222,10 @@
             "location": "Madison, WI",
             "other-notes": "BlueTree Network was acquired by Providence St. Joseph Health in 2019.",
             "responsibilities": [
+                "Built & Transformed a .NET webforms/MVC system into an elegant Ember.js SPA & REST API",
                 "Crafted a platform to expertly match healthcare facilities with elite Epic consultants for post-launch software implementation, streamlining the connection process.",
                 "Led initial development team as CTO",
                 "Acted as a technical bridge between founders and the development team",
-                "Transformed a .NET webforms/MVC system into an elegant Ember.js SPA & REST API",
                 "Assisted in white-labeling BlueTree's software platform for other organizations, such as United Way."
             ]
         },
