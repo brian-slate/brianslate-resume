@@ -1,4 +1,4 @@
-# Brian Slate's Resume - SvelteKit App
+# Brian Slate Resume App
 
 This project is a dynamic, interactive resume built using SvelteKit. It showcases my skills, education, and employment history in a visually appealing format, and includes a feature to download the resume as a PDF.
 
