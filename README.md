@@ -1,38 +1,39 @@
-# create-svelte
+# Brian Slate's Resume - SvelteKit App
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This project is a dynamic, interactive resume built using SvelteKit. It showcases my skills, education, and employment history in a visually appealing format, and includes a feature to download the resume as a PDF.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **Dynamic Content Loading**: Resume data is fetched dynamically from a static `JSON` doc and rendered using Svelte components.
+- **Interactive UI**: The resume includes interactive elements like a PDF download button that converts the entire page into a downloadable PDF.
+- **Responsive Design**: The layout adjusts for different screen sizes, ensuring a good user experience on desktops, tablets, and mobile devices.
+- **Custom Components**: Utilizes custom Svelte components for various sections of the resume, such as `ProfileHeader`, `Skills`, `Employment`, and more.
+- **Advanced CSS Styling**: Features like `PolygonBackground` and `HalftoneWave` add unique visual elements to the resume.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Getting Started
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+To get a local copy up and running follow these simple steps.
 
-## Developing
+### Prerequisites
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- npm
 
-```bash
-npm run dev
+### Installation
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+1. Clone the repo
+`git clone`
 
-## Building
+2. Install NPM packages `npm install`
 
-To create a production version of your app:
 
-```bash
-npm run build
-```
+## Usage
 
-You can preview the production build with `npm run preview`.
+To run the development server: `npm run dev`
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Building and Running in Production
+
+To create a production build: `npm run build`
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
