@@ -41,10 +41,12 @@
 	}
 	.job-position {
 		font-weight: bold;
+		margin-top: 0;
 	}
 	.job-subheading {
 		font-style: italic;
 		color: #333;
+		margin-top: 0;
 	}
 	.job-other-notes {
 		font-size: 0.9em;
@@ -58,12 +60,13 @@
 	}
 	.job-responsibilities {
 		list-style-type: none;
-		font-size: 0.9em;
+		font-size: 1.1em;
 	}
 	.job-responsibilities li {
 		position: relative;
-		padding-left: 20px;
+		padding-left: 25px;
 		cursor: nw-resize;  /* More pleasing cursor */
+		padding-bottom: 4px;
 	}
 	.job-responsibilities li::before {
 		content: '\25B6';

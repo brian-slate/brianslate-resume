@@ -33,12 +33,12 @@
   </script>
   
   <section id="skills">
-	<h2>Skills</h2>
+	<h2>Skills & Technologies</h2>
 	{#each orderedCategories as category}
-	  <h3>{category}</h3>
+	  <!-- <h3>{category}</h3> -->
 	  {#each groupedSkills[category] as { name, level, subitems }}
 		<div class="skill-row">
-		  <span class="skill-text">{name}</span>
+		  <!-- <span class="skill-text">{name}</span> -->
 		  <div class="battery-container">
 			<!-- <BatteryMeter {level} /> Removing for now -->
 		  </div>
@@ -59,7 +59,7 @@
 	  display: flex;
 	  align-items: center;
 	  justify-content: space-between;
-	  min-height: 50px;
+	  /* min-height: 50px; */
 	  margin-bottom: 10px;
 	}
   

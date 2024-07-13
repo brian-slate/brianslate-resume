@@ -16,7 +16,7 @@
 <style>
 .app.resume {
 	display: grid;
-	grid-template-columns: 0.8fr 1.2fr 0.8fr;
+	grid-template-columns: 0.8fr 1.2fr;
 	grid-template-rows: auto;
 	gap: 40px;
 	align-items: start;

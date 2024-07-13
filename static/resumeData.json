@@ -20,71 +20,14 @@
     ],
     "skills": [
         {
-            "category": "Management",
-            "name": "Leadership",
-            "level": 5,
+            "category": "General",
+            "name": "General",
+            "level": 1,
             "subitems": [
-                "Championing Best Practices",
-                "Celebrating Team Successes and Efforts",
-                "Cultivating Blameless Team Culture",
-                "Driving Agile Methodologies",
-                "Crafting Meaningful KPIs for Real Impact"
-            ]
-        },
-        {
-            "category": "Management",
-            "name": "Tools",
-            "level": 5,
-            "subitems": [
-                "Excel, Jira, Asana, Trello",
-                "Confluence, SharePoint, PowerPoint",
-                "Slack, Teams, Zoom, Salesforce"
-            ]
-        },
-        {
-            "category": "Infrastructure",
-            "name": "Cloud SaaS",
-            "level": 5,
-            "subitems": [
-                "[Experienced in similar Azure and GCP Services]",
-                "IAM & ControlTower",
-                "EC2, ECR & ECS",
-                "SNS & SQS",
-                "S3, RDS, & Dynamo",
-                "CloudFront & CloudFormation",
-                "Lambda & API Gateway",
-                "CloudWatch & EventBridge",
-                "CodeBuild/Commit/Deploy",
-                "ElastiCache",
-                "KMS, Param Store, & Secrets Manager",
-                "...",
-                "AWS Amplify ",
-                "SST - Serverless Stack",
-                "SAM - Serverless App Model"
-            ]
-        },
-        {
-            "category": "Infrastructure",
-            "name": "DevOps / Platform Engineering",
-            "level": 5,
-            "subitems": [
-                "Github Actions",
-                "Github tooling for Testing & Static Analysis",
+                "AWS Cloud Technologies",
+                "AWS Lambda",
                 "Jenkins Declarative Pipelines",
-                "Jenkins Shared Libraries",
-                "Sentry",
-                "CloudWatch",
-                "Snyk",
-                "Netdata",
-                "NewRelic",
-                "Terraform & OpenTofu - IaC"
-            ]
-        },
-        {
-            "category": "Front-End",
-            "name": "Frameworks & Libraries",
-            "level": 5,
-            "subitems": [
+                "Terraform & OpenTofu",
                 "React",
                 "Typescript",
                 "Vanilla JS - ES6+",
@@ -92,82 +35,34 @@
                 "Angular",
                 "Next.js",
                 "Vue",
-                "Ionic, Capacitor & Cordova"
-            ]
-        },
-        {
-            "category": "Front-End",
-            "name": "Build Tooling and Testing",
-            "level": 5,
-            "subitems": [
-                "Webpack, Vite",
-                "Redux, Recoil, MobX",
-                "Sass, Less, Stylus",
-                "PostCSS, Autoprefixer",
-                "ESLint, Prettier",
-                "Jest, Vitest, Playwright, Cypress"
-            ]
-        },
-        {
-            "category": "Back-End",
-            "name": "Languages & Frameworks",
-            "level": 4,
-            "subitems": [
+                "Ionic",
+                "Capacitor & Cordova",
+                "Webpack",
+                "Vite",
+                "Redux",
+                "Recoil",
+                "MobX",
+                "Cypress",
+                "Playwright",
                 "Node.js",
-                "AWS Lambda",
                 "PHP",
                 "Laravel",
                 "C# .NET Core",
-                "Ruby / Rails",
+                "Ruby on Rails",
                 "Python",
-                "Java"
-            ]
-        },
-        {
-            "category": "Databases",
-            "name": "Relational & Nonrelational Databases",
-            "level": 5,
-            "subitems": [
                 "MySQL",
                 "DynamoDB",
                 "MariaDB",
                 "PostgreSQL",
                 "SQL Server",
-                "Redis/Elasticache",
-                "SQLite"
-            ]
-        },
-        {
-            "category": "eCommerce",
-            "name": "Platforms",
-            "level": 5,
-            "subitems": [
-                "WooCommerce",
-                "Shopify",
-                "Stripe",
-                "Squarespace"
-            ]
-        },
-        {
-            "category": "Other Tools",
-            "name": "IDEs & Shells",
-            "level": 2,
-            "subitems": [
-                "VS Code",
-                "Zsh & Bash",
+                "Redis",
+                "Elasticache",
+                "SQLite",
+                "Zsh",
+                "Bash",
                 "SSH",
-                "Warp",
-                "Visual Studio 2010/2013"
-            ]
-        },
-        {
-            "category": "Code Versioning",
-            "name": "Git & SVN",
-            "level": 4,
-            "subitems": [
-                "GitHub",
-                "BitBucket",
-                "GitHub Actions Workflows"
+                "GitHub Actions Workflows",
+                "Driving Agile Methodologies" 
             ]
         }
     ],
@@ -178,27 +73,26 @@
             "position": "Technical Partner - Startup",
             "location": "Los Angeles, CA",
             "responsibilities": [
-                "Built Proof of Concept using React & Node w/Amplify and Twilio API to validate project's technical direction.",
-                "Collaborated in the evaluation and selection of the tech stack, and played a key role in choosing a development partner to ensure future flexibility and scalability.",
-                "Oversaw the development of the MVP, ensuring alignment with project goals and technical requirements.",
-                "Provided ongoing technical and product advice, participated in alignment meetings, refined user experience, and collaborated on branding and documentation efforts."
+                "Built Proof of Concept using React & Node w/Amplify and Twilio API to validate project's technical direction",
+                "Collaborated in the evaluation and selection of the tech stack, and played a key role in choosing a development partner to ensure future flexibility and scalability",
+                "Oversaw the development of the MVP, ensuring alignment with project goals and technical requirements",
+                "Provided ongoing technical and product advice, participated in alignment meetings, refined user experience, and collaborated on branding and documentation efforts"
             ]
         },
         {
             "company": "CI Solutions",
-            "duration": "May 2022 – Jan 2024",
+            "duration": "Feb 2022 – Dec 2024",
             "position": "Director of Software Engineering",
             "location": "Los Alamitos, CA (Remote)",
             "responsibilities": [
-                "Led the modernization of a monolithic PHP & React application, enhancing stability, performance and scalability.",
-                "Built and deployed AWS lambda microservices leveraging both SAM and SST.",
-                "Architected and developed a CI/CD platform from the ground up using Jenkins and Github Actions, heavily backed by automated testing, resulting in increased deployment cadence and confidence.",
-                "Enhanced application development consistency by adopting local Docker dev environments and containerized deployments via ECS Fargate.",
-                "Championed a culture of excellence, leading by example to embed best practices across our technology spectrum — coding, infrastructure, documentation — enhancing team collaboration and conduct.",
-                "Excelled in diverse roles — Scrum Master, Engineering Manager, Software Developer, and DevOps/Platform Engineer — demonstrating flexibility and expertise across the development lifecycle.",
-                "Successfully integrated agile methodologies into our core development practices, optimizing workflows and project delivery.",
-                "Managed and dynamically adapted a team of 10+ members, overseeing hiring, onboarding, and training of developers and contractors, while fostering an environment for career growth.",
-                "Streamlined team processes including onboarding, daily scrum meetings, development, code review, and QA & testing, significantly improving efficiency and team performance."
+                "Built and deployed AWS Lambda microservices leveraging both SAM and SST",
+                "Architected and developed a CI/CD platform from the ground up using Jenkins and Github Actions, heavily backed by automated testing, resulting in increased deployment cadence and confidence",
+                "Enhanced application development consistency by adopting local Docker development environments and containerized deployments via ECS Fargate",
+                "Managed a team of 10+ members, overseeing hiring, onboarding, and training of developers and contractors in various time zones, while fostering an environment for career growth",
+                "Led the modernization of a monolithic PHP & React application, enhancing stability, performance and scalability",
+                "Excelled in diverse roles (Scrum Master, Engineering Manager, Software Developer, and DevOps/Platform Engineer), demonstrating flexibility and expertise across the development lifecycle",
+                "Streamlined team processes including onboarding, daily scrum meetings, development, code review, and QA & testing, significantly improving efficiency and team performance"
+                
             ]
         },
         {
@@ -208,11 +102,14 @@
             "location": "Madison, WI / Los Angeles, CA (Remote)",
             "other-notes": "Genesys acquired Interactive Intelligence in December of 2016",
             "responsibilities": [
-                "Developed and managed Admin UI portal, enabling dynamic configuration and integration for the company's services and software features.",
-                "Developed and integrated tooling to support coordinated iframed applications, empowering development teams to build/deploy independent apps autonomously",
+                "Designed and implemented a JSON schema-driven UI tool to install and configure integrations via the Genesys app Marketplace",
+                "Developed a complex UI in Angular for monitoring and managing on-premises Bridge Connectors, enabling remote control, status display, and configuration of data synchronization with systems like Active Directory and LDAP into Genesys cloud (Implemented a setup wizard and advanced UI features similar to AWS EC2's interface)",
                 "Migrated an aging Angular.js SPA in coffeescript to modern Angular and typescript using event-driven observable architecture",
+                "Built and managed the Admin UI portal in Angular, enabling dynamic configuration and integration for the company's services and software features",
+                "Developed and integrated tooling to support coordinated iFramed applications, empowering development teams to build/deploy independent apps autonomously",
                 "Participated in the transition process during the acquisition of Interactive Intelligence, ensuring a smooth integration of technologies and teams",
                 "Presented an experimental VR-based support app to over 2,000 attendees at the company keynote, introduced by the former Interactive Intelligence CEO"
+                
             ]
         },             
         {
@@ -222,11 +119,11 @@
             "location": "Madison, WI",
             "other-notes": "BlueTree Network was acquired by Providence St. Joseph Health in 2019.",
             "responsibilities": [
-                "Built & Transformed a .NET webforms/MVC system into an elegant Ember.js SPA & REST API",
-                "Crafted a platform to expertly match healthcare facilities with elite Epic consultants for post-launch software implementation, streamlining the connection process.",
-                "Led initial development team as CTO",
-                "Acted as a technical bridge between founders and the development team",
-                "Assisted in white-labeling BlueTree's software platform for other organizations, such as United Way."
+                "Transformed a .NET webforms/MVC system into an elegant Ember.js SPA & REST API",
+                "Built a platform to expertly match healthcare facilities with elite Epic consultants for post-launch software implementation, streamlining the connection process",
+                "Led initial development team as CTO - acted as a technical bridge between founders and the development team",
+                "Assisted in white-labeling BlueTree's software platform for other organizations, such as United Way"
+                
             ]
         },
         {
@@ -235,11 +132,12 @@
             "position": "Senior Full Stack Developer",
             "location": "Madison, WI",
             "responsibilities": [
-                "Built several research database systems for the UW Atherosclerosis Imaging Research Program",
+                "Built several research database systems for the UW Atherosclerosis Imaging Research Program using a LAMP stack",
                 "Created a comprehensive HR management portal using Ruby on Rails & SQL Server",
-                "Migrated and developed two public-facing departmental websites using Drupal",
-                "Developed an in-house 'Query Manager' tool allowing researcher self-service access to warehoused data",
-                "Built tools to quickly scaffold applications to meet department needs"
+                "Developed an in-house web-based Query Manager tool allowing researchers self-service access to warehoused data",
+                "Built tools to quickly scaffold applications to meet department needs",
+                "Migrated and developed two public-facing departmental websites using Drupal"
+                
             ]
         }
     ],
@@ -248,7 +146,7 @@
             "degree": "B.S",
             "field": "Computer Science",
             "endYear": 2005,
-            "school": "University of Wisconsin, Madison, WI"
+            "school": "University of Wisconsin - Madison"
         },
         {
             "degree": "AWS Certified Developer",

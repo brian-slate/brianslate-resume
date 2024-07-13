@@ -103,18 +103,18 @@
 			</PolygonBackground>
 		</section>
 
-		<section id="employment" class="rounded-section">
-			<PolygonBackground leftColor={lightGrayThemeColor} rightColor={greenThemeColor}>
-				<div class="content-container">
-					<Employment {resumeData} />
-				</div>
-			</PolygonBackground>
-		</section>
-
 		<section id="skills" class="rounded-section">
 			<PolygonBackground leftColor={goldThemeColor} rightColor={lightGrayThemeColor}>
 				<div class="content-container">
 					<Skills {resumeData} />
+				</div>
+			</PolygonBackground>
+		</section>
+
+		<section id="employment" class="rounded-section">
+			<PolygonBackground leftColor={lightGrayThemeColor} rightColor={greenThemeColor}>
+				<div class="content-container">
+					<Employment {resumeData} />
 				</div>
 			</PolygonBackground>
 		</section>
@@ -147,7 +147,8 @@
 	#contact-info,
 	#summary,
 	#education,
-	#additional-info {
+	#additional-info, 
+	#skills {
 		grid-column: 1;
 	}
 
@@ -156,12 +157,6 @@
 		grid-row: 2 / span 6;
 	}
 	
-	#skills {
-		grid-column: 3;
-		grid-row: 2 / span 6;
-		
-	}
-
 	@media (max-width: 1200px) { /* tablet */
 		/* .app.resume {
 			grid-template-columns: 1fr 1fr;

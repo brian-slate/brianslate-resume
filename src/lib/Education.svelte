@@ -8,7 +8,7 @@
 		<h3>{edu.school}</h3>
 		<p>
 			{edu.degree}, {edu.field} 
-			{#if edu.startYear}
+			<!-- {#if edu.startYear}
 				{#if edu.endYear}
 					({edu.startYear} - {edu.endYear})
 				{:else}
@@ -16,7 +16,7 @@
 				{/if}
 			{:else if edu.endYear}
 				({edu.endYear})
-			{/if}
+			{/if} -->
 		</p>
 	{/each}
 </section>
