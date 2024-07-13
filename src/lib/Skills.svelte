@@ -63,11 +63,11 @@
 	  margin-bottom: 10px;
 	}
   
-	.skill-text {
+	/* .skill-text {
 	  flex: 1;
 	  min-width: 0;
 	  padding-right: 15px;
-	}
+	} */
   
 	.battery-container {
 	  flex-shrink: 0;
